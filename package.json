@@ -1,0 +1,35 @@
+{
+  "name": "blog-ui",
+  "version": "0.1.0",
+  "description": "Blog UI",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-cli serve --config webpack.dev.js",
+    "build": "webpack-cli --config webpack.prod.js",
+    "test": "js-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prettykingking/blog-ui.git"
+  },
+  "keywords": [
+    "blog-ui",
+    "bootstrap"
+  ],
+  "author": "Jie Zheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prettykingking/blog-ui/issues"
+  },
+  "homepage": "https://github.com/prettykingking/blog-ui#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
+  }
+}

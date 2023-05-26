@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# Distributed build
+dist/
+
+# Mac OS X
+.DS_Store
+
+# IDEA
+.idea/
