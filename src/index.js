@@ -1,4 +1,4 @@
-import main from "./js/main";
+import main from "./js/main.js";
 
 import "./scss/main.scss";
 

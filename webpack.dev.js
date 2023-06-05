@@ -19,13 +19,13 @@ const webpackConfig = () => {
     },
     module: {
       rules: [
-        {
+        /* {
           test: /\.m?js/,
           resolve: {
             // see https://github.com/webpack/webpack/issues/11467
             fullySpecified: false
           }
-        },
+        }, */
         {
           test: /\.(scss)$/,
           use: [
