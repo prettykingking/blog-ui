@@ -16,6 +16,7 @@
 // Optionally include any other parts as needed
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
+@import "bootstrap/scss/nav";
 
 // Helpers
 @import "bootstrap/scss/helpers";
@@ -24,3 +25,5 @@
 @import "bootstrap/scss/utilities/api";
 
 // Add additional custom code here
+@import "variables";
+@import "header";
