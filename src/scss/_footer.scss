@@ -1,0 +1,13 @@
+// Footer
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: $footer-background;
+
+  p {
+    color: $secondary;
+    font-size: $small-font-size;
+  }
+}
