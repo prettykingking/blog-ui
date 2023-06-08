@@ -1,5 +1,36 @@
 // Header
 
+@mixin link-after($border-color) {
+  display: block;
+  border-top: map-get($border-widths, 3) solid $border-color;
+  border-radius: $border-radius $border-radius 0 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: var(--#{$prefix}nav-link-padding-x);
+  right: var(--#{$prefix}nav-link-padding-x);
+}
+
 .header {
   box-shadow: $header-shadow;
+
+  .nav-item {
+    & > .nav-link {
+      color: $secondary;
+      position: relative;
+      padding: .75rem var(--#{$prefix}nav-link-padding-x);
+
+      &:hover::after {
+        @include link-after($secondary);
+      }
+    }
+
+    &[active] > .nav-link {
+      color: $dark;
+
+      &::after {
+        @include link-after($dark);
+      }
+    }
+  }
 }
