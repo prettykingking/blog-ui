@@ -1,0 +1,56 @@
+//
+// Base styles
+//
+
+.archive {
+  // scss-docs-start card-css-vars
+  --archive-spacer-y: #{map-get($spacers, 4)};
+  --archive-title-spacer-y: #{$card-title-spacer-y};
+  --archive-border-width: #{$card-border-width};
+  --archive-border-color: #{$card-border-color};
+  --archive-border-radius: #{$card-border-radius};
+  --archive-height: #{$card-height};
+  --archive-bg: #{$card-bg};
+  // scss-docs-end card-css-vars
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+  height: var(--archive-height);
+  word-wrap: break-word;
+  background-color: var(--archive-bg);
+  background-clip: border-box;
+  border-top: var(--archive-border-width) solid var(--archive-border-color);
+  padding: var(--archive-spacer-y) 0;
+}
+
+.archive-body {
+  // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+  // as much space as possible, ensuring footers are aligned to the bottom.
+  flex: 1 1 auto;
+  color: var(--archive-color);
+}
+
+.archive-title {
+  margin-bottom: var(--archive-title-spacer-y);
+}
+
+.archive-topic {
+  margin-bottom: var(--archive-title-spacer-y);
+}
+
+.archive-text {
+  margin-bottom: 0;
+}
+
+.archive-picture {
+  background-color: $light-picture-background;
+  border-radius: var(--archive-border-radius);
+}
+
+@include media-breakpoint-down(sm) {
+  .archive-picture {
+    margin-bottom: #{$spacer};
+  }
+}
