@@ -15,6 +15,16 @@
   background-color: $white;
   box-shadow: $header-shadow;
 
+  .header-title {
+    color: $dark;
+    font-size: map-get($font-sizes, 4);
+    text-decoration: none;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+
   .nav-item {
     & > .nav-link {
       color: $secondary;

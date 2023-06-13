@@ -14,8 +14,9 @@
   // scss-docs-end card-css-vars
 
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  text-decoration: none;
+  color: $body-color;
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
   height: var(--archive-height);
   word-wrap: break-word;
@@ -23,6 +24,10 @@
   background-clip: border-box;
   border-top: var(--archive-border-width) solid var(--archive-border-color);
   padding: var(--archive-spacer-y) 0;
+
+  &:hover {
+    color: $body-color;
+  }
 }
 
 .archive-body {

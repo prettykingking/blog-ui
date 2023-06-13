@@ -26,6 +26,10 @@
 // Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "bootstrap/scss/utilities/api";
 
+// Bootstrap icons
+$bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
+@import "~bootstrap-icons/font/bootstrap-icons";
+
 // Add additional custom code here
 @import "variables";
 @import "header";
@@ -34,3 +38,4 @@
 @import "archive";
 @import "filter-bar";
 @import "topic";
+@import "article";

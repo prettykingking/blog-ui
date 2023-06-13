@@ -1,0 +1,20 @@
+// Article
+
+.article {
+  --article-component-margin-y: #{$spacer * 2};
+  --article-heading-margin-y: #{$spacer * 1};
+}
+
+.article-eyebrow {
+  color: $secondary;
+  font-size: $font-size-sm;
+}
+
+.article-copy {
+  margin-bottom: var(--article-component-margin-y);
+}
+
+.article-heading {
+  margin-top: var(--article-heading-margin-y);
+  margin-bottom: var(--article-heading-margin-y);
+}
