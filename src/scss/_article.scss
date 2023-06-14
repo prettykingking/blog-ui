@@ -10,6 +10,15 @@
   font-size: $font-size-sm;
 }
 
+.article-subhead {
+  font-size: $h4-font-size;
+  line-height: $line-height-sm;
+}
+
+.article-component {
+  margin-top: var(--article-component-margin-y);
+}
+
 .article-copy {
   margin-bottom: var(--article-component-margin-y);
 }
