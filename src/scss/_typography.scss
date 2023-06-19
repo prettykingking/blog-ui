@@ -1,0 +1,18 @@
+// Typography
+
+code {
+  color: $body-color;
+}
+
+pre {
+  padding: $spacer * 0.5 $spacer;
+}
+
+.code-listing {
+  border-radius: $border-radius;
+  background-color: $light-background;
+}
+
+li .code-listing {
+  margin-top: $spacer * 0.75;
+}

@@ -3,6 +3,46 @@
 .article {
   --article-component-margin-y: #{$spacer * 2};
   --article-heading-margin-y: #{$spacer * 1};
+  --article-border-radius: #{$border-radius};
+}
+
+// listing in article
+.article {
+  ul, ol {
+    margin-top: $spacer * 0.75;
+    margin-bottom: 0;
+    margin-left: $spacer * 1.25;
+    padding: 0;
+  }
+
+  li, li p {
+    margin-bottom: 0;
+
+    &:not(:first-child) {
+      margin-top: $spacer * 0.75;
+    }
+  }
+
+  dl {
+    margin-bottom: 0;
+  }
+
+  dt:not(:first-child) {
+    margin-top: $spacer * 0.75;
+  }
+
+  dd {
+    margin-bottom: 0;
+    margin-left: $spacer * 2;
+  }
+
+  dd p {
+    margin-bottom: 0;
+
+    &:not(:first-child) {
+      margin-top: $spacer * 0.75;
+    }
+  }
 }
 
 .article-eyebrow {

@@ -97,9 +97,24 @@
                 <h2 class="article-heading h2">Figure</h2>
 
                 <div class="article-copy">
-                  <figure class="figure">
-                    <img src="/images/English-Handwriting.jpeg" class="figure-img img-fluid" />
-                    <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                  <figure class="figure text-center">
+                    <div class="figure-picture overflow-hidden">
+                      <picture>
+                        <img src="/images/English-Handwriting.jpeg" alt="" class="picture-image" />
+                      </picture>
+                    </div>
+                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                  </figure>
+                </div>
+
+                <div class="article-copy">
+                  <figure class="figure text-center">
+                    <div class="figure-picture overflow-hidden">
+                      <picture>
+                        <img src="/images/shoujinti.jpg" alt="" class="picture-image" />
+                      </picture>
+                    </div>
+                    <figcaption class="figure-caption">Shoujinti</figcaption>
                   </figure>
                 </div>
               </div>
@@ -107,15 +122,16 @@
               <div class="article-component">
                 <h2 class="article-heading h2">Tables</h2>
                 <div class="article-copy">
-                  <table>
+                  <table class="table">
+                    <caption class="table-caption text-center">Table 3.3 List of users</caption>
                     <thead>
                     <tr>
                       <th>Level</th>
-                      <th>Typical time in level for ICs (years)</th>
+                      <th>Typical time in level for ICs (years) years years</th>
                       <th>Typical time in level for managers (years)</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="table-group-divider">
                     <tr>
                       <td>L1</td>
                       <td>1.5-2</td>
@@ -133,13 +149,71 @@
                     </tr>
                     <tr>
                       <td>L4</td>
-                      <td>4+<br>We expect all engineers to grow to have L4-level impact or greater over time. L4 will be a career level for many engineers.</td>
-                      <td>4+<br>We expect all engineering managers to grow to have L4-level impact or greater over time. L4 will be a career level for many engineers.</td>
+                      <td>
+                        <p>4+</p>4+
+                        <p>We expect all engineers to grow to have L4-level impact or greater over time. L4 will be a career level for many engineers.</p>
+                      </td>
+                      <td>
+                        <p>4+</p>
+                        <p>We expect all engineering managers to grow to have L4-level impact or greater over time. L4 will be a career level for many engineers.</p></td>
                     </tr>
                     <tr>
                       <td></td>
                       <td></td>
                       <td>*Manager time in L3 is shorter than IC because ICs transferring to management are expected to have already grown through much of the L3 level</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="article-copy">
+                  <table class="table">
+                    <thead>
+                    <tr>
+                      <th scope="col">
+                        <p>File Extension</p>
+                      </th>
+                      <th scope="col">
+                        <p>MIME Type</p>
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <p>
+                          <code>.m3u8</code>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          <code>vnd<wbr>.apple<wbr>.mpeg<wbr>URL</code>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>
+                          <code>.ts</code>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          <code>video/MP2T</code>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>
+                          <code>.mp4</code>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          <code>video/mp4</code>
+                        </p>
+                      </td>
                     </tr>
                     </tbody>
                   </table>
@@ -168,11 +242,20 @@
                     <li>C/C++</li>
                     <li>Java</li>
                     <li>
-                      Levels
+                      <p>Levels</p>
+                      <p>Levels</p>
                       <ul>
                         <li>L1</li>
                         <li>L2</li>
                         <li>L3</li>
+                        <li>
+                          <p>L4</p>
+                          <ul>
+                            <li>L1</li>
+                            <li>L2</li>
+                            <li>L3</li>
+                          </ul>
+                        </li>
                       </ul>
                     </li>
                     <li>Scheme</li>
@@ -184,11 +267,19 @@
                     <li>C/C++</li>
                     <li>Java</li>
                     <li>
-                      Levels
+                      <p>Levels</p>
                       <ol>
                         <li>L1</li>
                         <li>L2</li>
                         <li>L3</li>
+                        <li>
+                          <p>L4</p>
+                          <ol>
+                            <li>L1</li>
+                            <li>L2</li>
+                            <li>L3</li>
+                          </ol>
+                        </li>
                       </ol>
                     </li>
                     <li>Scheme</li>
@@ -199,7 +290,9 @@
                 <div class="article-copy">
                   <dl>
                     <dt>Term A</dt>
-                    <dd>Definition for the term.</dd>
+                    <dd>
+                      <p>Definition for the term.</p>
+                    </dd>
 
                     <dt>Term A</dt>
                     <dd>
@@ -207,17 +300,6 @@
                       <p>And some more placeholder definition text.</p>
                     </dd>
                   </dl>
-                </div>
-              </div>
-
-              <div class="article-component">
-                <h2 class="article-heading h2">Code</h2>
-                <div class="article-copy">
-                  <code>print</code>
-                </div>
-
-                <div class="article-copy">
-                  <pre><code>Abc</code></pre>
                 </div>
               </div>
             </article>

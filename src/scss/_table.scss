@@ -1,0 +1,43 @@
+//
+// Table
+//
+
+.table {
+  --#{$prefix}table-color: #{$table-color};
+  --#{$prefix}table-bg: #{$white};
+  --#{$prefix}table-border-color: #{$table-border-color};
+
+  max-width: 100%;
+  color: var(--#{$prefix}table-color);
+  border-style: hidden;
+  border-color: var(--#{$prefix}table-border-color);
+
+  > thead {
+    vertical-align: bottom;
+
+    > tr > th {
+      padding: $table-cell-padding-y $table-cell-padding-x;
+      background-color: var(--#{$prefix}table-bg);
+      border-width: $table-border-width;
+    }
+  }
+
+  > tbody {
+    vertical-align: top;
+
+    > tr > td {
+      padding: $table-cell-padding-y $table-cell-padding-x;
+      background-color: var(--#{$prefix}table-bg);
+      border-width: $table-border-width;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.table-caption {
+  @include font-size($figure-caption-font-size);
+  color: $figure-caption-color;
+}

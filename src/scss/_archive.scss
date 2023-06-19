@@ -50,8 +50,10 @@
 }
 
 .archive-picture {
+  display: inline-block;
   background-color: $light-picture-background;
   border-radius: var(--archive-border-radius);
+  position: relative;
 }
 
 @include media-breakpoint-down(sm) {
