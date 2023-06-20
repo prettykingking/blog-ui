@@ -48,6 +48,11 @@
 .article-eyebrow {
   color: $secondary;
   font-size: $font-size-sm;
+  line-height: $line-height-sm;
+
+  .article-date {
+    font-weight: $font-weight-semibold;
+  }
 }
 
 .article-subhead {

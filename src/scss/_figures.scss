@@ -4,23 +4,30 @@
 
 .figure {
   display: block;
+  line-height: 0;
+
+  > :first-child {
+    margin-bottom: $spacer * 0.5;
+  }
 }
 
 .figure-picture {
   display: inline-block;
   background-color: $light-picture-background;
   border-radius: var(--article-border-radius);
-  margin-bottom: $spacer * .5;
-  line-height: 1;
   position: relative;
+}
+
+.picture {
+  display: inline-block;
 }
 
 .picture-image {
   max-width: 100%;
-  margin: 0 auto;
 }
 
 .figure-caption {
   @include font-size($figure-caption-font-size);
   color: $figure-caption-color;
+  line-height: $line-height-base;
 }

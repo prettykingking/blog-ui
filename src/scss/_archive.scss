@@ -49,15 +49,31 @@
   margin-bottom: 0;
 }
 
-.archive-picture {
-  display: inline-block;
+.archive-picture-box {
+  line-height: 0;
   background-color: $light-picture-background;
   border-radius: var(--archive-border-radius);
-  position: relative;
 }
 
 @include media-breakpoint-down(sm) {
-  .archive-picture {
+  .archive-picture-box {
     margin-bottom: #{$spacer};
   }
 }
+
+.archive-picture {
+  display: inline-block;
+  position: relative;
+
+  .archive-image {
+    max-width: 100%;
+    max-height: 162px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    .archive-image {
+      max-height: 275px;
+    }
+  }
+}
+
