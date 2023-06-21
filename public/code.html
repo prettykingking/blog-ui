@@ -50,12 +50,63 @@
 
                 <div class="article-copy">
                   <div class="code-listing">
-                    <pre><span></span><span class="n">include</span><span class="o">&lt;</span><span class="n">stdio</span><span class="p">.</span><span class="n">c</span><span class="o">&gt;</span><span class="w"> </span>
+                    <pre><span></span><span class="cm">/* Block comment */</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Date</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">AnInterface.CONSTANT</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">java.util.Date.parse</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">SomeClass.staticField</span><span class="p">;</span>
+<span class="cm">/**</span>
+<span class="cm"> * Doc comment here for &lt;code&gt;SomeClass&lt;/code&gt;</span>
+<span class="cm"> * @param T type parameter</span>
+<span class="cm"> * @see Math#sin(double)</span>
+<span class="cm"> */</span>
+<span class="nd">@Annotation</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">value</span><span class="p">)</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SomeClass</span><span class="o">&lt;</span><span class="n">T</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Runnable</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// some comment</span>
+<span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">unusedField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">12345.67890</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">UnknownType</span><span class="w"> </span><span class="n">anotherString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Another\nStrin\g"</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">staticField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">instanceFinalField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">protected</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">protectedField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">packagePrivateField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span>
-<span class="p">{</span><span class="w"> </span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span><span class="err">syntax error</span><span class="w"> </span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span>
+<span class="w">  </span><span class="cm">/**</span>
+<span class="cm">   * Semantic highlighting:</span>
+<span class="cm">   * Generated spectrum to pick colors for local variables and parameters:</span>
+<span class="cm">   *  Color#1 SC1.1 SC1.2 SC1.3 SC1.4 Color#2 SC2.1 SC2.2 SC2.3 SC2.4 Color#3</span>
+<span class="cm">   *  Color#3 SC3.1 SC3.2 SC3.3 SC3.4 Color#4 SC4.1 SC4.2 SC4.3 SC4.4 Color#5</span>
+<span class="cm">   * @param param1</span>
+<span class="cm">   * @param reassignedParam</span>
+<span class="cm">   * @param param2</span>
+<span class="cm">   * @param param3</span>
+<span class="cm">   */</span>
+<span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">SomeClass</span><span class="p">(</span><span class="n">AnInterface</span><span class="w"> </span><span class="n">param1</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">reassignedParam</span><span class="p">,</span>
+<span class="w">                  </span><span class="kt">int</span><span class="w"> </span><span class="n">param2</span>
+<span class="w">                  </span><span class="kt">int</span><span class="w"> </span><span class="n">param3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">reassignedValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">staticField</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">param2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">param3</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">localVar1</span><span class="p">,</span><span class="w"> </span><span class="n">localVar2</span><span class="p">,</span><span class="w"> </span><span class="n">localVar3</span><span class="p">,</span><span class="w"> </span><span class="n">localVar4</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">localVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"IntelliJ"</span><span class="p">;</span><span class="w"> </span><span class="c1">// Error, incompatible types</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">anotherString</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">toString</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">localVar</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">protectedField</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">packagePrivateField</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">staticField</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parse</span><span class="p">(</span><span class="s">"1.2.3"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Method is deprecated</span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">Thread</span><span class="p">().</span><span class="na">countStackFrames</span><span class="p">();</span><span class="w"> </span><span class="c1">// Method is deprecated and marked for removal</span>
+<span class="w">    </span><span class="n">reassignedValue</span><span class="w"> </span><span class="o">++</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="n">field</span><span class="p">.</span><span class="na">run</span><span class="p">();</span><span class="w"> </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">SomeClass</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">localVar</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="w">    </span><span class="n">reassignedParam</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">().</span><span class="na">toArray</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">CONSTANT</span><span class="o">]</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">enum</span><span class="w"> </span><span class="n">AnEnum</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">CONST1</span><span class="p">,</span><span class="w"> </span><span class="n">CONST2</span><span class="w"> </span><span class="p">}</span>
+<span class="kd">interface</span> <span class="nc">AnInterface</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">CONSTANT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">method</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kd">abstract</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SomeAbstractClass</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">protected</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">instanceField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">staticField</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
                   </div>
@@ -64,12 +115,12 @@
                 <div class="article-copy">
                   <figure class="figure">
                     <div class="code-listing">
-                    <pre><span></span><span class="n">include</span><span class="o">&lt;</span><span class="n">stdio</span><span class="p">.</span><span class="n">c</span><span class="o">&gt;</span><span class="w"> </span>
+                    <pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.c&gt;</span><span class="c1"> </span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span>
 <span class="p">{</span><span class="w"> </span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span><span class="err">syntax error</span><span class="w"> </span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
                     </div>
@@ -84,14 +135,12 @@
                       <p>Code Sample</p>
                       <p>Code Sample</p>
                       <div class="code-listing">
-                        <pre><span></span><span class="n">include</span><span class="o">&lt;</span><span class="n">stdio</span><span class="p">.</span><span class="n">c</span><span class="o">&gt;</span><span class="w"> </span>
+                        <pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.c&gt;</span><span class="c1"> </span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span>
 <span class="p">{</span><span class="w"> </span>
-<span class="w">    </span><span class="hll">highlight line</span>
-<span class="hll"><span class="w">    </span><span class="s">highlight line</span></span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span><span class="w"> </span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
                       </div>

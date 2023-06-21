@@ -1,6 +1,8 @@
 @import "bootstrap/scss/functions";
 
 // Include any default variable overrides here
+$font-family-sans-serif: "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial;
+$font-family-monospace: "SF Mono", SFMono-Regular , ui-monospace, Menlo, monospace;
 
 @import "bootstrap/scss/variables";
 
@@ -41,3 +43,4 @@ $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 @import "figures";
 @import "table";
 @import "typography";
+@import "stem";

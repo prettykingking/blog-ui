@@ -49,21 +49,23 @@
   margin-bottom: 0;
 }
 
-.archive-picture-box {
+.archive-cover {
   line-height: 0;
-  background-color: $light-picture-background;
-  border-radius: var(--archive-border-radius);
+  text-align: center;
 }
 
 @include media-breakpoint-down(sm) {
-  .archive-picture-box {
+  .archive-cover {
     margin-bottom: #{$spacer};
   }
 }
 
-.archive-picture {
+.archive-image-box {
   display: inline-block;
   position: relative;
+  background-color: $light-picture-background;
+  border-radius: var(--archive-border-radius);
+  overflow: hidden;
 
   .archive-image {
     max-width: 100%;

@@ -9,16 +9,21 @@
   > :first-child {
     margin-bottom: $spacer * 0.5;
   }
+
+  &.figure-image {
+    text-align: center;
+  }
 }
 
-.figure-picture {
+.figure-image-box {
   display: inline-block;
   background-color: $light-picture-background;
   border-radius: var(--article-border-radius);
   position: relative;
+  overflow: hidden;
 }
 
-.picture {
+picture {
   display: inline-block;
 }
 
@@ -30,4 +35,5 @@
   @include font-size($figure-caption-font-size);
   color: $figure-caption-color;
   line-height: $line-height-base;
+  text-align: center;
 }
