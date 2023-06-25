@@ -3,6 +3,7 @@
 .article {
   --article-component-margin-y: #{$spacer * 2};
   --article-heading-margin-y: #{$spacer * 1};
+  --article-border: #{$border-width $border-style $border-color};
   --article-border-radius: #{$border-radius};
 }
 
@@ -45,6 +46,13 @@
   }
 }
 
+.article-header:after {
+  display: block;
+  content: '';
+  margin-top: var(--article-component-margin-y);
+  border-top: var(--article-border);
+}
+
 .article-eyebrow {
   color: $secondary;
   font-size: $font-size-sm;
@@ -73,6 +81,9 @@
   margin-bottom: var(--article-heading-margin-y);
 }
 
-.checklist {
-  list-style: none;
+ul {
+  &.checklist {
+    list-style: none;
+    margin-left: 0;
+  }
 }

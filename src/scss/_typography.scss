@@ -1,5 +1,12 @@
 // Typography
 
+kbd {
+  color: $body-color;
+  background-color: transparent;
+  padding: $spacer * 0.125 $spacer * 0.25;
+  border-radius: revert;
+}
+
 code {
   color: $light-code-color;
   background-color: $light-code-background;
