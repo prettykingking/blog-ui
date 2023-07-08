@@ -84,6 +84,32 @@
 ul {
   &.checklist {
     list-style: none;
-    margin-left: 0;
+
+    & > li {
+      position: relative;
+    }
+
+    & > li:before {
+      display: inline-block;
+      font-family: $bootstrap-icons-font !important;
+      font-style: normal;
+      font-weight: normal !important;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1.5;
+      vertical-align: -.125em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: absolute;
+      left: -1.25rem;
+    }
+
+    & > li.checked:before {
+      content: "\f270";
+    }
+
+    & > li.unchecked:before {
+      content: "\f28a";
+    }
   }
 }
