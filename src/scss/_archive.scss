@@ -67,13 +67,6 @@
 
   .archive-image {
     max-width: 100%;
-    max-height: 162px;
-  }
-
-  @include media-breakpoint-down(sm) {
-    .archive-image {
-      max-height: 275px;
-    }
   }
 }
 
