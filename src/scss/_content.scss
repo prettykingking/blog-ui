@@ -11,6 +11,17 @@
 }
 
 .main {
+  margin-top: $spacer * 4;
+  margin-bottom: $spacer * 1.5;
+
+  &.main-archive {
+    margin-top: $spacer * 7;
+  }
+
+  &.main-no-header {
+    margin-top: $spacer * 1.5;
+  }
+
   main {
     background-color: $white;
   }

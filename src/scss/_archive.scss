@@ -13,7 +13,6 @@
   --archive-bg: #{$card-bg};
   // scss-docs-end card-css-vars
 
-  position: relative;
   display: block;
   text-decoration: none;
   color: $body-color;
@@ -62,7 +61,6 @@
 
 .archive-image-box {
   display: inline-block;
-  position: relative;
   background-color: $light-picture-background;
   border-radius: var(--archive-border-radius);
   overflow: hidden;

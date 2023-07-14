@@ -14,6 +14,11 @@
 .header {
   background-color: $white;
   box-shadow: $header-shadow;
+  contain: layout;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $zindex-fixed;
 
   .header-title {
     color: $dark;
