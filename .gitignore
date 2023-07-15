@@ -9,3 +9,6 @@ dist/
 
 # IDEA
 .idea/
+
+# package manager
+yarn-error.log

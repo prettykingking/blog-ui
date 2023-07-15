@@ -19,13 +19,18 @@ const webpackConfig = () => {
     },
     module: {
       rules: [
-        /* {
-          test: /\.m?js/,
-          resolve: {
-            // see https://github.com/webpack/webpack/issues/11467
-            fullySpecified: false
+        {
+          // see https://github.com/webpack/webpack/issues/11467
+          // resolve.fullySpecified: false
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ['@babel/preset-env']
+            }
           }
-        }, */
+        },
         {
           test: /\.(scss)$/,
           use: [
