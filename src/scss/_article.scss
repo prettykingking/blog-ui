@@ -9,6 +9,9 @@
 
 // listing in article
 .article {
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+
   ul, ol {
     margin-top: $spacer * 0.75;
     margin-bottom: 0;
@@ -53,17 +56,49 @@
   border-top: var(--article-border);
 }
 
-.article-eyebrow {
-  color: $secondary;
+.article-topic {
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  font-weight: $font-weight-semibold;
+
+  margin-bottom: $spacer * .5;
+
+  .topic-link {
+    color: $secondary;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.article-date .date-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-left: 0;
+  list-style: none;
+
   font-size: $font-size-sm;
   line-height: $line-height-sm;
 
-  .article-date {
-    font-weight: $font-weight-semibold;
+  .date-entry {
+    display: block;
+    margin-top: $spacer * .5;
+
+    &:not(:last-child) {
+      margin-right: $spacer * .75;
+    }
+
+    .date-entry-label {
+      margin-right: $spacer * .25;
+      color: $secondary;
+    }
   }
 }
 
 .article-subhead {
+  margin-top: $spacer * .5;
   font-size: $h4-font-size;
   line-height: $line-height-sm;
 }
