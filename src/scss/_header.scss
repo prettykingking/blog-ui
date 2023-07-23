@@ -12,13 +12,29 @@
 }
 
 .header {
-  background-color: $white;
-  box-shadow: $header-shadow;
   contain: layout;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: $zindex-fixed;
+
+  .header-shadow {
+    box-shadow: $header-shadow;
+  }
+
+  .header-logo-row {
+    padding-top: $spacer * .5;
+    padding-bottom: $spacer * .5;
+    border-bottom: 1px solid $border-color;
+    background-color: $white;
+
+    position: relative;
+    z-index: 1;
+
+    &.no-tabs {
+      border-bottom: none;
+    }
+  }
 
   .header-title {
     color: $dark;
@@ -28,6 +44,11 @@
     &:hover {
       color: $dark;
     }
+  }
+
+  .header-tabs {
+    background-color: $white;
+    position: relative;
   }
 
   .nav-item {

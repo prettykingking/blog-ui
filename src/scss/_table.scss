@@ -19,6 +19,11 @@
       padding: $table-cell-padding-y $table-cell-padding-x;
       background-color: var(--#{$prefix}table-bg);
       border-width: $table-border-width;
+      border-bottom-width: 2px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -30,10 +35,16 @@
       background-color: var(--#{$prefix}table-bg);
       border-width: $table-border-width;
     }
-  }
 
-  p:last-child {
-    margin-bottom: 0;
+    code {
+      color: $body-color;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

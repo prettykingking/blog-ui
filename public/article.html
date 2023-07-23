@@ -6,12 +6,11 @@
   <title>Article</title>
   <link rel="icon" type="image/png" href="/images/favicon-64x64.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/apple-touch-icon-180x180.png">
-  <script src="/main.js"></script>
 </head>
 <body>
 <div>
   <div class="header">
-    <header class="py-2">
+    <header class="header-logo-row no-tabs header-shadow">
       <div class="main-container text-center">
         <a href="/" class="header-title">Jie's Memos</a>
       </div>
@@ -38,6 +37,25 @@
                   <ul class="date-list">
                     <li class="date-entry"><span class="date-entry-label">Published</span>June 13, 2023</li>
                     <li class="date-entry"><span class="date-entry-label">Revised</span>June 13, 2023</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="article-component">
+                <div class="article-heading h5">Table of Contents</div>
+                <div class="article-copy">
+                  <ul class="toc">
+                    <li><a href="#">1. Python Primer</a></li>
+                    <li><a href="#">2. Object-Oriented Programming</a></li>
+                    <li><a href="#text-formatting">3. Algorithm Analysis</a></li>
+                    <li>
+                      <p><a href="#">11. Recursion</a></p>
+                      <ul>
+                        <li><a href="#">11.1. Binary Search Trees</a></li>
+                        <li><a href="#">11.2. Balanced Search Trees</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">12 Sorting and Selection</a></li>
                   </ul>
                 </div>
               </div>
@@ -83,7 +101,7 @@
               </div>
 
               <div class="article-component">
-                <h2 class="article-heading h2">Text Formatting</h2>
+                <h2 id="text-formatting" class="article-heading h2">3. Text Formatting</h2>
 
                 <p class="article-copy">You can use the mark tag to <mark>highlight</mark> text.</p>
                 <p class="article-copy"><del>This line of text is meant to be treated as deleted text.</del></p>
@@ -355,5 +373,7 @@
     </footer>
   </div>
 </div>
+
+<script src="/main.js"></script>
 </body>
 </html>

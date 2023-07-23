@@ -21,9 +21,10 @@
 
   li, li p {
     margin-bottom: 0;
+    margin-top: $spacer * 0.75;
 
-    &:not(:first-child) {
-      margin-top: $spacer * 0.75;
+    &:first-child {
+      margin-top: 0;
     }
   }
 
@@ -68,31 +69,6 @@
 
     &:hover {
       text-decoration: underline;
-    }
-  }
-}
-
-.article-date .date-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0;
-  margin-left: 0;
-  list-style: none;
-
-  font-size: $font-size-sm;
-  line-height: $line-height-sm;
-
-  .date-entry {
-    display: block;
-    margin-top: $spacer * .5;
-
-    &:not(:last-child) {
-      margin-right: $spacer * .75;
-    }
-
-    .date-entry-label {
-      margin-right: $spacer * .25;
-      color: $secondary;
     }
   }
 }
@@ -145,6 +121,42 @@ ul {
 
     & > li.unchecked:before {
       content: "\f28a";
+    }
+  }
+
+  &.date-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: 0;
+    list-style: none;
+
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+
+    .date-entry {
+      display: block;
+      margin-top: $spacer * .5;
+
+      &:not(:last-child) {
+        margin-right: $spacer * .75;
+      }
+
+      .date-entry-label {
+        margin-right: $spacer * .25;
+        color: $secondary;
+      }
+    }
+  }
+
+  &.toc {
+    list-style: none;
+    margin-left: 0;
+    padding-left: $spacer * 1.25;
+    border-left: 4px solid $border-color;
+
+    & ul {
+      list-style: none;
     }
   }
 }
