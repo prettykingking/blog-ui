@@ -16,7 +16,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: $zindex-fixed;
+  z-index: 10;
 
   .header-shadow {
     box-shadow: $header-shadow;
@@ -29,7 +29,7 @@
     background-color: $white;
 
     position: relative;
-    z-index: 1;
+    z-index: 20;
 
     &.no-tabs {
       border-bottom: none;

@@ -54,8 +54,19 @@ class Header extends BaseComponent {
   }
 
   _transformHeader() {
-    if (this._scrollPosition === this._lastKnownScrollPosition) {
+    if (this._scrollPosition < 0) {
+      // Scroll up in Safari
       return;
+    } else {
+      if (this._scrollPosition === this._lastKnownScrollPosition) {
+        return;
+      }
+
+      // Scroll down in Safari
+      const extra = this._scrollPosition + document.documentElement.clientHeight;
+      if (extra > document.documentElement.scrollHeight) {
+        return;
+      }
     }
 
     if (this._scrollPosition > this._lastKnownScrollPosition) {
