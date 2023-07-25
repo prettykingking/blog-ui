@@ -19,7 +19,19 @@
   z-index: 10;
 
   .header-shadow {
+    position: relative;
     box-shadow: $header-shadow;
+
+    &::before {
+      display: block;
+      background-color: $white;
+      height: 6px;
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      right: 0;
+    }
   }
 
   .header-logo-row {
