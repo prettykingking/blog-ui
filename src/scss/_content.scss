@@ -1,13 +1,7 @@
 // Main
 
 .main-container {
-  @include make-container();
-}
-
-@include media-breakpoint-up(md) {
-  .main-container {
-    max-width: 720px;
-  }
+  @include make-container($gutter: 0);
 }
 
 .main {
