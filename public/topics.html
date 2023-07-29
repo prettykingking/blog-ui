@@ -11,18 +11,18 @@
 <body>
 <div>
   <div class="header">
-    <header class="py-2 border-bottom">
-      <div class="container text-center">
-        <span class="fs-4">Jie's Writings</span>
+    <header class="header-logo-row">
+      <div class="main-container text-center">
+        <a href="/" class="header-title">Jie's Memos</a>
       </div>
     </header>
-    <nav>
+    <nav class="header-tabs header-shadow">
       <div class="container d-flex justify-content-center">
         <ul class="nav">
-          <li class="nav-item">
+          <li class="nav-item" active>
             <a href="/" class="nav-link">Archive</a>
           </li>
-          <li class="nav-item" active>
+          <li class="nav-item">
             <a href="/topics.html" class="nav-link">Topics</a>
           </li>
           <li class="nav-item">
@@ -33,35 +33,23 @@
     </nav>
   </div>
 
-  <div class="main">
+  <div class="main main-topic">
     <main>
-      <div class="filter-bar mb-3">
-        <div class="main-container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="filter-bar-content">
-                <span class="text-secondary me-3">Category</span><span>C/C++</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="main-container">
-        <div class="row">
+        <div class="row gx-0">
           <div class="col-md-12">
             <div class="topic-list topic-list-flush">
-              <a href="#" class="topic-list-item d-flex py-3">
-                <div class="d-flex w-100 justify-content-between">
-                  <h6 class="mb-0">C/C++</h6>
-                  <small class="text-nowrap text-secondary">12</small>
+              <a href="#" class="topic-list-link">
+                <div class="topic-row">
+                  <h6 class="topic-title h6">C/C++</h6>
+                  <small class="topic-count text-nowrap">12</small>
                 </div>
               </a>
 
-              <a href="#" class="topic-list-item d-flex py-3">
-                <div class="d-flex w-100 justify-content-between">
-                  <h6 class="mb-0">Java</h6>
-                  <small class="text-nowrap text-secondary">12</small>
+              <a href="#" class="topic-list-link">
+                <div class="topic-row">
+                  <h6 class="topic-title h6">Java</h6>
+                  <small class="topic-count text-nowrap">12</small>
                 </div>
               </a>
             </div>

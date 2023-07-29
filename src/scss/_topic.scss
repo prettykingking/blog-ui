@@ -7,8 +7,6 @@
   --topic-list-color: #{$list-group-color};
   --topic-list-border-color: #{$list-group-border-color};
   --topic-list-border-width: #{$list-group-border-width};
-  --topic-list-item-padding-x: #{$list-group-item-padding-x};
-  --topic-list-item-padding-y: #{$list-group-item-padding-y};
   // scss-docs-end list-group-css-vars
 
   display: flex;
@@ -16,17 +14,31 @@
 
   // No need to set list-style: none; since .topic-list-item is block level
   padding-left: 0; // reset padding because ul and ol
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
+  width: 980px;
+}
+
+@include media-breakpoint-down(lg) {
+  .topic-list {
+    width: 692px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .topic-list {
+    width: 87.5%;
+  }
 }
 
 // Individual list items
 //
 // Use on `li`s or `div`s within the `.topic-list` parent.
 
-.topic-list-item {
+.topic-list-link {
   position: relative;
-  display: block;
-  padding: var(--topic-list-item-padding-y) 0;
+  padding: $spacer 0;
   color: var(--topic-list-color);
   text-decoration: none;
   border-bottom: var(--topic-list-border-width) solid var(--topic-list-border-color);
@@ -37,5 +49,19 @@
 
   &:last-child {
     border-bottom-width: 0;
+  }
+
+  .topic-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .topic-title {
+      margin-bottom: 0;
+    }
+
+    .topic-count {
+      color: $secondary;
+    }
   }
 }

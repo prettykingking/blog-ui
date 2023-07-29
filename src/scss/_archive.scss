@@ -2,6 +2,42 @@
 // Base styles
 //
 
+.archives {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+
+  .archive-group-title {
+    margin-top: $spacer * 1.5;
+    margin-bottom: $spacer;
+    font-size: $h3-font-size;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .archive-group-title {
+      font-size: $h4-font-size;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .archive-group-title {
+      font-size: $h5-font-size;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .archives {
+    width: 692px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .archives {
+    width: 87.5%;
+  }
+}
+
 .archive {
   // scss-docs-start card-css-vars
   --archive-spacer-y: #{map-get($spacers, 4)};
@@ -36,27 +72,63 @@
   color: var(--archive-color);
 }
 
-.archive-title {
-  margin-bottom: var(--archive-title-spacer-y);
+.archive-content {
+  margin-left: $spacer * 2;
+
+  &.archive-no-picture {
+    margin-left: 0;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .archive-content {
+    margin-left: $spacer * 1.5;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .archive-content {
+    margin-left: $spacer;
+  }
 }
 
 .archive-topic {
-  margin-bottom: var(--archive-title-spacer-y);
+  margin-bottom: 0;
 }
 
-.archive-text {
+.archive-title {
+  font-size: $h4-font-size;
+  margin-top: $spacer * .5;
   margin-bottom: 0;
+}
+
+@include media-breakpoint-down(lg) {
+  .archive-title {
+    font-size: $h5-font-size;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .archive-title {
+    font-size: $h6-font-size;
+    margin-top: $spacer * .25;
+  }
+}
+
+.archive-date {
+  margin-top: $spacer * 0.5;
+  margin-bottom: 0;
+}
+
+@include media-breakpoint-down(md) {
+  .archive-date {
+    margin-top: $spacer * .25;
+  }
 }
 
 .archive-cover {
   line-height: 0;
   text-align: center;
-}
-
-@include media-breakpoint-down(sm) {
-  .archive-cover {
-    margin-bottom: #{$spacer};
-  }
 }
 
 .archive-image-box {
@@ -66,7 +138,19 @@
   overflow: hidden;
 
   .archive-image {
-    max-width: 100%;
+    width: 259px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .archive-image {
+      width: 264px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .archive-image {
+      width: 106px;
+    }
   }
 }
 

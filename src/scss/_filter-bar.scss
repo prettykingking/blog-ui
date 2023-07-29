@@ -7,4 +7,19 @@
 .filter-bar-content {
   padding-top: $spacer;
   padding-bottom: $spacer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+}
+
+@include media-breakpoint-down(lg) {
+  .filter-bar-content {
+    width: 692px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .filter-bar-content {
+    width: 87.5%;
+  }
 }

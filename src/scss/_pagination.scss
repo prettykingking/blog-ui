@@ -8,10 +8,11 @@
   --#{$prefix}pagination-hover-color: #{$pagination-hover-color};
   --#{$prefix}pagination-focus-color: #{$pagination-focus-color};
   --#{$prefix}pagination-focus-bg: #{$pagination-focus-bg};
-  --#{$prefix}pagination-disabled-color: #{$pagination-disabled-color};
   // scss-docs-end pagination-css-vars
 
   display: flex;
+  padding-top: $spacer * 1.5;
+  border-top: $border-width $border-style $border-color;
   @include list-unstyled();
 }
 
@@ -20,10 +21,6 @@
   padding: var(--#{$prefix}pagination-padding-y) var(--#{$prefix}pagination-padding-x);
   @include font-size(var(--#{$prefix}pagination-font-size));
   background-color: var(--#{$prefix}pagination-bg);
-
-  &.disabled {
-    color: var(--#{$prefix}pagination-disabled-color);
-  }
 }
 
 .page-link {

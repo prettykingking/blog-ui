@@ -2,6 +2,11 @@
 // Table
 //
 
+.table-wrapper {
+  margin-top: $spacer * 1.6;
+  overflow-x: auto;
+}
+
 .table {
   --#{$prefix}table-color: #{$table-color};
   --#{$prefix}table-bg: #{$white};
@@ -22,8 +27,8 @@
       border-bottom-width: 2px;
     }
 
-    p:last-child {
-      margin-bottom: 0;
+    p:first-child {
+      margin-top: 0;
     }
   }
 
@@ -42,8 +47,8 @@
       padding: 0;
     }
 
-    p:last-child {
-      margin-bottom: 0;
+    p:first-child {
+      margin-top: 0;
     }
   }
 }

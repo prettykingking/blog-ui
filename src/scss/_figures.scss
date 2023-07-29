@@ -18,9 +18,15 @@
 .figure-image-box {
   display: inline-block;
   background-color: $light-picture-background;
-  border-radius: var(--article-border-radius);
+  border-radius: $border-radius;
   position: relative;
   overflow: hidden;
+}
+
+@include media-breakpoint-down(md) {
+  .figure-image-box {
+    border-radius: revert;
+  }
 }
 
 picture {
