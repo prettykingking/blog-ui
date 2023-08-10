@@ -2,20 +2,40 @@
 // Figures
 //
 
-.figure {
+figure {
   display: block;
-  line-height: 0;
+  margin-top: $spacer * 2;
+  margin-bottom: $spacer * 2;
 
-  > :first-child {
-    margin-bottom: $spacer * 0.5;
+  & > :first-child {
+    margin-bottom: 0;
   }
 
-  &.figure-image {
-    text-align: center;
+  &.quote {
+    padding-left: $spacer * 1.25;
+    border-left: 4px solid $border-color;
   }
 }
 
-.figure-image-box {
+figcaption, .image-desc {
+  @include font-size($figure-caption-font-size);
+  color: $figure-caption-color;
+  line-height: $line-height-base;
+  text-align: center;
+  margin-top: $spacer;
+}
+
+.image-desc {
+  margin-bottom: $spacer * 2;
+}
+
+.image-sheet {
+  line-height: 0;
+  text-align: center;
+  margin-top: $spacer * 2;
+}
+
+.image-box {
   display: inline-block;
   background-color: $light-picture-background;
   border-radius: $border-radius;
@@ -24,7 +44,7 @@
 }
 
 @include media-breakpoint-down(md) {
-  .figure-image-box {
+  .image-box {
     border-radius: revert;
   }
 }
@@ -35,11 +55,4 @@ picture {
 
 .picture-image {
   max-width: 100%;
-}
-
-.figure-caption {
-  @include font-size($figure-caption-font-size);
-  color: $figure-caption-color;
-  line-height: $line-height-base;
-  text-align: center;
 }

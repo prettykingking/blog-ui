@@ -6,14 +6,13 @@
   <title>Article</title>
   <link rel="icon" type="image/png" href="/images/favicon-64x64.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/apple-touch-icon-180x180.png">
-  <script src="/main.js"></script>
 </head>
 <body>
 <div>
   <div class="header">
-    <header class="py-2">
+    <header class="header-logo-row no-tabs header-shadow">
       <div class="main-container text-center">
-        <a href="/" class="header-title">Jie's Writings</a>
+        <a href="/" class="header-title">杰的备忘录</a>
       </div>
     </header>
   </div>
@@ -21,38 +20,40 @@
   <div class="main">
     <main>
       <div class="main-container">
-        <div class="row">
+        <div class="row gx-0">
           <div class="col-md-12">
-            <article class="article mt-3 mb-3">
-              <div class="article-header">
-                <div class="article-eyebrow mb-3">
-                  <div class="article-topic">Update 更新</div>
-                  <div class="article-date mt-1">June 13, 2023</div>
+            <article class="article">
+              <div class="article-header component-text">
+                <div class="article-eyebow">
+                  <div class="article-topic">
+                    <a class="topic-link" href="#">Update</a>
+                  </div>
+                  <div class="article-date">
+                    June 13, 2023
+                  </div>
                 </div>
                 <div class="article-title">
                   <h1 class="h1">Apple and global suppliers expand renewable energy to 13.7 gigawatts</h1>
                 </div>
-                <div class="article-subhead mt-3">
+                <div class="article-subhead">
                   Over 250 global manufacturing partners are now on a path to decarbonize Apple production by 2030
                 </div>
               </div>
 
-              <div class="article-component component-text">
-                <h2 class="article-heading h2">Code</h2>
-                <div class="article-copy">
-                  <p>
-                    It is recommended to use limit <code>10-100</code> for channels and <code>1000-10000</code> otherwise.
-                  </p>
-                  <p>
-                    Using a keyboard <kbd>Ctrl+C</kbd>
-                  </p>
-                  <p>
-                    <code>std::boyer_moore_searcher</code> and <code>std::boyer_moore_horspool_searcher</code> have been <code>implemented</code>. (104702784)
-                  </p>
-                </div>
 
-                <div class="article-copy">
-                  <div class="code-listing">
+              <div class="component component-text">
+                <h2 class="component-header h2">Code</h2>
+                <p>
+                  It is recommended to use limit <code>10-100</code> for channels and <code>1000-10000</code> otherwise.
+                </p>
+                <p>
+                  Using a keyboard <kbd>Ctrl+C</kbd>
+                </p>
+                <p>
+                  <code>std::boyer_moore_searcher</code> and <code>std::boyer_moore_horspool_searcher</code> have been <code><a href="#">implemented</a></code>. (104702784)
+                </p>
+
+                <div class="code-listing">
                     <pre><span></span><span class="cm">/* Block comment */</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Date</span><span class="p">;</span>
 <span class="kn">import static</span><span class="w"> </span><span class="nn">AnInterface.CONSTANT</span><span class="p">;</span>
@@ -112,14 +113,12 @@
 <span class="w">  </span><span class="kd">protected</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">instanceField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">staticField</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
-                  </div>
                 </div>
               </div>
 
-              <div class="article-component component-text">
-                <div class="article-copy">
-                  <figure class="figure">
-                    <div class="code-listing">
+              <div class="component component-text">
+                <figure>
+                  <div class="code-listing">
                     <pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.c&gt;</span><span class="c1"> </span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span>
@@ -128,18 +127,16 @@
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
-                    </div>
-                    <figcaption class="figure-caption text-center">Code Fragment 11.11: Additional code for the TreeMap class</figcaption>
-                  </figure>
-                </div>
+                  </div>
+                  <figcaption>Code Fragment 11.11: Additional code for the TreeMap class</figcaption>
+                </figure>
 
-                <div class="article-copy">
-                  <ul>
-                    <li>Code listing</li>
-                    <li>
-                      <p>Code Sample</p>
-                      <p>Code Sample</p>
-                      <div class="code-listing">
+                <ul>
+                  <li>Code listing</li>
+                  <li>
+                    <p>Code Sample</p>
+                    <p>Code Sample</p>
+                    <div class="code-listing">
                         <pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.c&gt;</span><span class="c1"> </span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span>
@@ -148,10 +145,9 @@
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </article>
           </div>
@@ -168,5 +164,7 @@
     </footer>
   </div>
 </div>
+
+<script src="/main.js"></script>
 </body>
 </html>

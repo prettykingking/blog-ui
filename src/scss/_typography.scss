@@ -19,7 +19,33 @@ pre {
   margin-bottom: 0;
 }
 
+ul, ol {
+  margin-bottom: $spacer;
+  margin-left: $spacer * 1.25;
+  padding: 0;
+}
+
+li {
+  margin-top: $spacer;
+}
+
+dl {
+  margin-bottom: $spacer;
+}
+
+dt {
+  font-weight: $font-weight-normal;
+  margin-bottom: $spacer;
+}
+
+dd {
+  margin-left: $spacer * 2;
+  margin-bottom: 0;
+}
+
 .code-listing {
+  margin-top: $spacer * 2;
+  margin-bottom: $spacer * 2;
   line-height: $line-height-base;
   border-radius: $border-radius;
   background-color: $light-code-background;
@@ -27,7 +53,7 @@ pre {
 }
 
 li > .code-listing {
-  margin-top: $spacer * 0.8;
+  margin-top: $spacer;
   margin-bottom: 0;
 }
 
@@ -124,14 +150,22 @@ mark, .mark {
   padding: $spacer * 0.125 $spacer * 0.25;
 }
 
-dt {
-  font-weight: $font-weight-semibold;
-}
-
 b, strong {
   font-weight: $font-weight-semibold;
 }
 
-th {
-  font-weight: $font-weight-semibold;
+// Blockquotes
+.blockquote {
+  margin-bottom: $blockquote-margin-y;
+  @include font-size($font-size-base);
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.blockquote-footer {
+  margin-top: $spacer * 0.5;
+  margin-bottom: 0;
+  text-align: left;
 }

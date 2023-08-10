@@ -69,7 +69,13 @@
     position: relative;
   }
 
+  .nav {
+    margin-left: 0;
+  }
+
   .nav-item {
+    margin-top: 0;
+
     & > .nav-link {
       color: $secondary;
       position: relative;

@@ -14,7 +14,7 @@ $link-decoration: none;
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/reboot";
-@import "bootstrap/scss/type";
+@import "~bootstrap/scss/type";
 
 // Optionally include any other parts as needed
 @import "bootstrap/scss/containers";
@@ -33,6 +33,7 @@ $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 
 // Add additional custom code here
 @import "variables";
+@import "typography";
 @import "header";
 @import "content";
 @import "footer";
@@ -44,5 +45,4 @@ $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 @import "article";
 @import "figures";
 @import "table";
-@import "typography";
 @import "stem";

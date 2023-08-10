@@ -17,12 +17,12 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  width: 980px;
+  width: 653px;
 }
 
 @include media-breakpoint-down(lg) {
   .topic-list {
-    width: 692px;
+    width: 576px;
   }
 }
 

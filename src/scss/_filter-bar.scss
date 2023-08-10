@@ -9,12 +9,12 @@
   padding-bottom: $spacer;
   margin-left: auto;
   margin-right: auto;
-  width: 980px;
+  width: 653px;
 }
 
 @include media-breakpoint-down(lg) {
   .filter-bar-content {
-    width: 692px;
+    width: 576px;
   }
 }
 

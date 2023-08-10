@@ -3,7 +3,8 @@
 //
 
 .table-wrapper {
-  margin-top: $spacer * 1.6;
+  margin-top: $spacer * 2;
+  margin-bottom: $spacer * 2;
   overflow-x: auto;
 }
 
@@ -26,10 +27,6 @@
       border-width: $table-border-width;
       border-bottom-width: 2px;
     }
-
-    p:first-child {
-      margin-top: 0;
-    }
   }
 
   > tbody {
@@ -46,14 +43,22 @@
       background-color: transparent;
       padding: 0;
     }
+  }
 
-    p:first-child {
-      margin-top: 0;
-    }
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
-.table-caption {
+th {
+  font-weight: $font-weight-semibold;
+}
+
+caption {
   @include font-size($figure-caption-font-size);
   color: $figure-caption-color;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: $spacer;
 }

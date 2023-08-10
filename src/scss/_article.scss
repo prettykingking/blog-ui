@@ -7,48 +7,8 @@
   --article-border-radius: #{$border-radius};
 }
 
-// listing in article
-.article {
-  margin-top: $spacer;
-  margin-bottom: $spacer;
-
-  p {
-    margin-top: $spacer * 0.8;
-    margin-bottom: 0;
-  }
-
-  ul, ol {
-    margin-top: $spacer * 0.8;
-    margin-bottom: 0;
-    margin-left: $spacer * 1.25;
-    padding: 0;
-  }
-
-  li, li p {
-    margin-top: $spacer * 0.8;
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
-  dl {
-    margin-bottom: 0;
-  }
-
-  dt:not(:first-child) {
-    margin-top: $spacer * 0.8;
-  }
-
-  dd {
-    margin-bottom: 0;
-    margin-left: $spacer * 2;
-  }
-
-  figure, .code-listing {
-    margin-top: $spacer * 1.6;
-    margin-bottom: $spacer * 1.6;
-  }
+p.preamble {
+  margin-top: $spacer * 2;
 }
 
 .article-header {
@@ -58,7 +18,7 @@
   &:after {
     display: block;
     content: '';
-    margin-top: $spacer * 1.6;
+    margin-top: $spacer * 2;
     border-top: var(--article-border);
   }
 }
@@ -88,7 +48,7 @@
 
 @include media-breakpoint-down(lg) {
   .article-eyebow {
-    margin-bottom: $spacer * .8;
+    margin-bottom: $spacer;
   }
 }
 
@@ -100,12 +60,12 @@
 
 @include media-breakpoint-down(lg) {
   .article-subhead {
-    margin-top: $spacer * .8;
+    margin-top: $spacer;
     font-size: $h5-font-size;
   }
 }
 
-.article-component {
+.component {
   margin-right: auto;
   margin-left: auto;
 }
@@ -138,8 +98,9 @@
   }
 }
 
-.article-heading {
+.component-header {
   margin-top: $spacer * 2;
+  margin-bottom: $spacer;
 }
 
 ul {

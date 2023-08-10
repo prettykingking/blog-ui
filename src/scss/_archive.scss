@@ -5,7 +5,7 @@
 .archives {
   margin-left: auto;
   margin-right: auto;
-  width: 980px;
+  width: 653px;
 
   .archive-group-title {
     margin-top: $spacer * 1.5;
@@ -28,7 +28,7 @@
 
 @include media-breakpoint-down(lg) {
   .archives {
-    width: 692px;
+    width: 576px;
   }
 }
 

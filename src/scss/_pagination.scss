@@ -11,7 +11,7 @@
   // scss-docs-end pagination-css-vars
 
   display: flex;
-  padding-top: $spacer * 1.5;
+  margin-left: 0;
   border-top: $border-width $border-style $border-color;
   @include list-unstyled();
 }
