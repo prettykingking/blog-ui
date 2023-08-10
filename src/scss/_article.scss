@@ -26,7 +26,6 @@ p.preamble {
 .article-eyebow {
   font-size: $font-size-sm;
   line-height: $line-height-sm;
-  font-weight: $font-weight-semibold;
   color: $secondary;
 
   margin-bottom: $spacer;
@@ -36,7 +35,7 @@ p.preamble {
       color: $secondary;
 
       &:hover {
-        text-decoration: underline;
+        color: $link-hover-color;
       }
     }
   }
@@ -115,7 +114,7 @@ ul {
       display: inline-block;
       font-family: $bootstrap-icons-font !important;
       font-style: normal;
-      font-weight: normal !important;
+      font-weight: $font-weight-normal !important;
       font-variant: normal;
       text-transform: none;
       line-height: 1.5;

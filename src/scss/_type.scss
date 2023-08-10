@@ -1,0 +1,21 @@
+// Headings
+h5, h6 {
+  line-height: $line-height-base;
+  font-weight: 500;
+}
+
+// Blockquotes
+.blockquote {
+  margin-bottom: $blockquote-margin-y;
+  @include font-size($font-size-base);
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.blockquote-footer {
+  margin-top: $spacer * 0.5;
+  margin-bottom: 0;
+  text-align: left;
+}

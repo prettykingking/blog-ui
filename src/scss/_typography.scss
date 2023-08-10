@@ -13,6 +13,10 @@ code {
   padding: $spacer * 0.125 $spacer * 0.25;
 }
 
+a code {
+  color: $contrast-link-color;
+}
+
 pre {
   color: $light-code-color;
   padding: $spacer * 0.5 $spacer;
@@ -34,7 +38,7 @@ dl {
 }
 
 dt {
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-semibold;
   margin-bottom: $spacer;
 }
 
@@ -152,20 +156,4 @@ mark, .mark {
 
 b, strong {
   font-weight: $font-weight-semibold;
-}
-
-// Blockquotes
-.blockquote {
-  margin-bottom: $blockquote-margin-y;
-  @include font-size($font-size-base);
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-}
-
-.blockquote-footer {
-  margin-top: $spacer * 0.5;
-  margin-bottom: 0;
-  text-align: left;
 }

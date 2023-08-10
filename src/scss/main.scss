@@ -3,7 +3,18 @@
 // Include any default variable overrides here
 $font-family-sans-serif: "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial;
 $font-family-monospace: "SF Mono", SFMono-Regular , ui-monospace, Menlo, monospace;
+
+$link-color: #1a73e8;
+$link-hover-color: #1a73e8;
 $link-decoration: none;
+
+$h1-font-size: 2rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1rem;
+$h6-font-size: 1rem;
+$headings-font-weight: 400;
 
 @import "bootstrap/scss/variables";
 
@@ -14,7 +25,7 @@ $link-decoration: none;
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
+@import "bootstrap/scss/type";
 
 // Optionally include any other parts as needed
 @import "bootstrap/scss/containers";
@@ -33,6 +44,7 @@ $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 
 // Add additional custom code here
 @import "variables";
+@import "type";
 @import "typography";
 @import "header";
 @import "content";
