@@ -40,7 +40,6 @@
 
 .archive {
   // scss-docs-start card-css-vars
-  --archive-spacer-y: #{map-get($spacers, 4)};
   --archive-title-spacer-y: #{$card-title-spacer-y};
   --archive-border-width: #{$card-border-width};
   --archive-border-color: #{$card-border-color};
@@ -58,7 +57,7 @@
   background-color: var(--archive-bg);
   background-clip: border-box;
   border-top: var(--archive-border-width) solid var(--archive-border-color);
-  padding: var(--archive-spacer-y) 0;
+  padding: $spacer 0;
 
   &:hover {
     color: $body-color;
@@ -93,7 +92,8 @@
 }
 
 .archive-topic {
-  margin-bottom: 0;
+  margin: 0;
+  color: $secondary-text-color;
 }
 
 .archive-title {
@@ -116,6 +116,7 @@
 }
 
 .archive-date {
+  color: $secondary-text-color;
   margin-top: $spacer * 0.5;
   margin-bottom: 0;
 }

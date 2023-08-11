@@ -5,8 +5,7 @@
   overflow: hidden;
   line-height: $line-height-base;
   text-align: center;
-  margin-top: $spacer * 2;
-  margin-bottom: $spacer * 2;
+  margin: $spacer 0;
 
   .stem {
     padding: $spacer * .5 $spacer;

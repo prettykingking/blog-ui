@@ -4,35 +4,33 @@
 
 figure {
   display: block;
-  margin-top: $spacer * 2;
-  margin-bottom: $spacer * 2;
+  margin: $spacer 0;
 
   & > :first-child {
     margin-bottom: 0;
   }
 
   &.quote {
-    padding-left: $spacer * 1.25;
-    border-left: 4px solid $border-color;
+    background-color: $light-code-background;
+    padding: $spacer * 0.5;
   }
 }
 
 figcaption, .image-desc {
   @include font-size($figure-caption-font-size);
-  color: $figure-caption-color;
   line-height: $line-height-base;
   text-align: center;
-  margin-top: $spacer;
+  margin-top: $spacer * 0.5;
 }
 
 .image-desc {
-  margin-bottom: $spacer * 2;
+  margin-bottom: $spacer;
 }
 
 .image-sheet {
   line-height: 0;
   text-align: center;
-  margin-top: $spacer * 2;
+  margin-top: $spacer;
 }
 
 .image-box {

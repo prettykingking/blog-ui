@@ -5,14 +5,22 @@
 }
 
 .main {
-  margin-top: $spacer * 5;
+  margin-top: $spacer * 3;
 
   &.main-archive, &.main-topic {
-    margin-top: $spacer * 7;
+    margin-top: $spacer * 6;
   }
 
   &.main-no-header {
-    margin-top: $spacer * 1.5;
+    margin-top: $spacer;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: $spacer * 2.5;
+
+    &.main-archive, &.main-topic {
+      margin-top: $spacer * 5.5;
+    }
   }
 
   main {

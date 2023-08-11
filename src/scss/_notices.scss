@@ -1,7 +1,7 @@
 // Notices
 
 aside {
-  --aside-margin-y: #{$spacer * 2};
+  --aside-margin-y: #{$spacer};
   --aside-note-bg: #f5f5f7;
   --aside-note-border: #696969;
   --aside-note-color: #696969;
@@ -30,9 +30,7 @@ aside {
   }
 
   code {
-    color: $body-color;
     background-color: transparent;
-    padding: 0;
   }
 }
 

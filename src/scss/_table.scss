@@ -3,62 +3,56 @@
 //
 
 .table-wrapper {
-  margin-top: $spacer * 2;
-  margin-bottom: $spacer * 2;
+  margin: $spacer 0;
   overflow-x: auto;
 }
 
-.table {
-  --#{$prefix}table-color: #{$table-color};
-  --#{$prefix}table-bg: #{$white};
-  --#{$prefix}table-border-color: #{$table-border-color};
+table {
+  &.stretched {
+    width: 100%;
+  }
+}
 
-  max-width: 100%;
-  color: var(--#{$prefix}table-color);
-  border-style: hidden;
-  border-color: var(--#{$prefix}table-border-color);
+tr {
+  border-bottom: $primary-border;
 
-  > thead {
-    vertical-align: bottom;
+  &:first-child {
+    border-top: $primary-border;
+  }
+}
 
-    > tr > th {
-      padding: $table-cell-padding-y $table-cell-padding-x;
-      background-color: var(--#{$prefix}table-bg);
-      border-width: $table-border-width;
-      border-bottom-width: 2px;
-    }
+th, td {
+  vertical-align: top;
+  padding: $table-cell-padding-y $table-cell-padding-x;
+
+  > :first-child {
+    margin-top: 0;
   }
 
-  > tbody {
-    vertical-align: top;
-
-    > tr > td {
-      padding: $table-cell-padding-y $table-cell-padding-x;
-      background-color: var(--#{$prefix}table-bg);
-      border-width: $table-border-width;
-    }
-
-    code {
-      color: $body-color;
-      background-color: transparent;
-      padding: 0;
-    }
-  }
-
-  p:last-child {
+  > :last-child {
     margin-bottom: 0;
+  }
+
+  code {
+    background-color: transparent;
   }
 }
 
 th {
   font-weight: 500;
+  background-color: $table-heading-background;
+  vertical-align: middle;
+}
+
+td {
+  background-color: $table-cell-background;
 }
 
 caption {
   @include font-size($figure-caption-font-size);
-  color: $figure-caption-color;
+  color: $body-color;
   text-align: center;
   padding-top: 0;
   padding-bottom: 0;
-  margin-top: $spacer;
+  margin-top: $spacer * 0.5;
 }

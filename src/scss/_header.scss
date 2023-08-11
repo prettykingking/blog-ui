@@ -74,15 +74,15 @@
   }
 
   .nav-item {
-    margin-top: 0;
+    margin: 0;
 
     & > .nav-link {
-      color: $secondary;
+      color: $secondary-text-color;
       position: relative;
       padding: $spacer * .75 var(--#{$prefix}nav-link-padding-x);
 
       &:hover::after {
-        @include link-after($secondary);
+        @include link-after($secondary-text-color);
       }
     }
 

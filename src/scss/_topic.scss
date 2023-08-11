@@ -14,9 +14,7 @@
 
   // No need to set list-style: none; since .topic-list-item is block level
   padding-left: 0; // reset padding because ul and ol
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
+  margin: $spacer auto;
   width: 653px;
 }
 
@@ -61,7 +59,7 @@
     }
 
     .topic-count {
-      color: $secondary;
+      color: $secondary-text-color;
     }
   }
 }

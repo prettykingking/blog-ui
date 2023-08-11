@@ -1,5 +1,18 @@
 // Variables
 
+$primary-text-color: #202124;
+$primary-text-rgba: rgba(0,0,0,.87);
+$secondary-text-color: #5f6368;
+$secondary-text-rgba: rgba(0,0,0,.65);
+$tertiary-text-color: #bdc1c6;
+$tertiary-text-rgba: rgba(0,0,0,.26);
+
+$primary-border: 1px solid #dadce0;
+$secondary-border: 1px solid #e8eaed;
+
+$table-heading-background: #e8eaed;
+$table-cell-background: hsla(0,0%,100%,.95);
+
 // header
 $header-shadow: 0 1px 2px 0 rgba($black, .3), 0 2px 6px 2px rgba($black, .15);
 

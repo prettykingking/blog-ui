@@ -1,14 +1,8 @@
 // Article
 
 .article {
-  --article-component-margin-y: #{$spacer * 2};
-  --article-heading-margin-y: #{$spacer * 1};
-  --article-border: #{$border-width $border-style $border-color};
-  --article-border-radius: #{$border-radius};
-}
-
-p.preamble {
-  margin-top: $spacer * 2;
+  padding-top: $spacer * 1.5;
+  padding-bottom: $spacer * 1.5;
 }
 
 .article-header {
@@ -18,21 +12,21 @@ p.preamble {
   &:after {
     display: block;
     content: '';
-    margin-top: $spacer * 2;
-    border-top: var(--article-border);
+    margin-top: $spacer * 1.5;
+    border-top: $primary-border;
   }
 }
 
 .article-eyebow {
   font-size: $font-size-sm;
   line-height: $line-height-sm;
-  color: $secondary;
+  color: $secondary-text-color;
 
   margin-bottom: $spacer;
 
   .article-topic {
     .topic-link {
-      color: $secondary;
+      color: $secondary-text-color;
 
       &:hover {
         color: $link-hover-color;
@@ -98,8 +92,8 @@ p.preamble {
 }
 
 .component-header {
-  margin-top: $spacer * 2;
-  margin-bottom: $spacer;
+  margin-top: $spacer * 3;
+  margin-bottom: $spacer * 1.5;
 }
 
 ul {
@@ -137,19 +131,27 @@ ul {
   &.toc {
     list-style: none;
     margin-left: 0;
-    padding-left: $spacer * 1.25;
-    border-left: 4px solid $border-color;
+    margin-top: $spacer * 1.75;
+    margin-bottom: $spacer * 1.5;
+    padding-left: $spacer * .75;
+    border-left: 4px solid $primary;
 
     ul {
       list-style: none;
+      margin-left: 0;
+      padding-left: $spacer * .75;
     }
 
-    li {
-      margin-bottom: $spacer * 0.5;
+    .toc-title {
+      color: $body-color;
+
+      &:hover {
+        color: $link-color;
+      }
     }
 
-    p {
-      margin-bottom: $spacer * 0.5;
+    .toc-heading .toc-title {
+      color: $secondary-text-color;
     }
   }
 }

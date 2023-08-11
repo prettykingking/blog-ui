@@ -1,7 +1,13 @@
 // Archive filter
 
 .filter-bar {
+  margin-top: $spacer;
   background-color: $light-background;
+
+  .filter-label {
+    color: $secondary-text-color;
+    margin-right: $spacer;
+  }
 }
 
 .filter-bar-content {
