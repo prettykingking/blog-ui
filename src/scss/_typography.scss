@@ -14,14 +14,13 @@ code {
   font-weight: 500;
 }
 
-a code {
-  color: $contrast-link-color;
+var {
+  color: $var-color;
+  font-weight: 500;
 }
 
-pre {
-  color: $light-code-color;
-  padding: $spacer * 0.5 $spacer;
-  margin-bottom: 0;
+a code {
+  color: $contrast-link-color;
 }
 
 ul, ol {
@@ -73,10 +72,17 @@ b, strong {
   font-weight: $font-weight-semibold;
 }
 
-.code-listing {
-  margin: $spacer 0;
-  background-color: $light-code-background;
-  overflow: hidden;
+pre {
+  color: $light-code-color;
+  padding: $spacer * 0.5 $spacer;
+  margin-bottom: 0;
+
+  &.verse {
+    font-family: var(--#{$prefix}body-font-family);
+    font-size: $font-size-base;
+    color: $body-color;
+    padding: 0;
+  }
 }
 
 // Pygments Syntax Highlight

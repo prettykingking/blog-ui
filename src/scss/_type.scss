@@ -26,6 +26,12 @@ h5, h6 {
   color: $body-color;
 }
 
+.code-listing {
+  margin: $spacer 0;
+  background-color: $light-code-background;
+  overflow: hidden;
+}
+
 .example {
   margin-left: $spacer * 1.875;
 }
