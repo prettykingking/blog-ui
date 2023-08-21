@@ -49,13 +49,9 @@
   }
 
   .header-title {
-    color: $dark;
+    color: $body-color;
     font-size: $h4-font-size;
     text-decoration: none;
-
-    &:hover {
-      color: $dark;
-    }
   }
 
   @include media-breakpoint-down(md) {
@@ -93,10 +89,10 @@
     }
 
     &[active] > .nav-link {
-      color: $dark;
+      color: $body-color;
 
       &::after {
-        @include link-after($dark);
+        @include link-after($body-color);
       }
     }
   }
