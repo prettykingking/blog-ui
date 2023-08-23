@@ -10,7 +10,7 @@ h5, h6 {
 }
 
 // Blockquotes
-.blockquote {
+blockquote {
   margin-bottom: $blockquote-margin-y;
   @include font-size($font-size-base);
 
@@ -19,17 +19,43 @@ h5, h6 {
   }
 }
 
-.blockquote-footer {
+.quote-footer {
   margin-top: $spacer;
   margin-bottom: 0;
   text-align: left;
   color: $body-color;
+
+  &::before {
+    content: "\2014\00A0"; // em dash, nbsp
+  }
 }
 
 .code-listing {
   margin: $spacer 0;
   background-color: $light-code-background;
   overflow: hidden;
+}
+
+.code-wrapper {
+  overflow-x: auto;
+
+  tr {
+    border-bottom: none;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  td {
+    background-color: transparent;
+
+    &.linenos {
+      pre {
+        color: $line-number-color;
+      }
+    }
+  }
 }
 
 .example {

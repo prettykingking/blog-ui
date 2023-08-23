@@ -7,6 +7,10 @@
   margin: $spacer 0;
 
   .stem {
-    overflow: auto;
+    overflow-x: auto;
+
+    .katex-display {
+      padding: 0 $spacer * 0.5;
+    }
   }
 }

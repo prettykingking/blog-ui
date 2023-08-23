@@ -74,19 +74,12 @@ b, strong {
 
 pre {
   color: $light-code-color;
-  padding: $spacer * 0.5 $spacer;
   margin-bottom: 0;
-
-  &.verse {
-    font-family: var(--#{$prefix}body-font-family);
-    font-size: $font-size-base;
-    color: $body-color;
-    padding: 0;
-  }
+  overflow: hidden;
 }
 
 // Pygments Syntax Highlight
-pre .tok-hll {
+pre .hll {
   padding: $spacer * 0.125 $spacer * 0.25;
   background-color: #ffffcc;
 }
