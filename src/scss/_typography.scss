@@ -118,7 +118,7 @@ pre .tok-gp { color: #000080; font-weight: $font-weight-semibold } // Generic.Pr
 pre .tok-gs { font-weight: $font-weight-semibold } // Generic.Strong
 pre .tok-gu { color: #800080; font-weight: $font-weight-semibold } // Generic.Subheading
 pre .tok-gt { color: #0044DD } // Generic.Traceback
-pre .tok-kc { color: #660e7a; font-weight: $font-weight-semibold } // Keyword.Constant
+pre .tok-kc { color: #000080; font-weight: $font-weight-semibold } // Keyword.Constant
 pre .tok-kd { color: #000080; font-weight: $font-weight-semibold } // Keyword.Declaration
 pre .tok-kn { color: #000080; font-weight: $font-weight-semibold } // Keyword.Namespace
 pre .tok-kp { color: #008000 } // Keyword.Pseudo
@@ -136,7 +136,7 @@ pre .tok-ne { color: #CB3F38; font-weight: $font-weight-semibold; } // Name.Exce
 pre .tok-nf { color: $light-code-color; } // Name.Function
 pre .tok-nl { color: #767600 } // Name.Label
 pre .tok-nn { color: $light-code-color; } // Name.Namespace
-pre .tok-nt { color: #008000; font-weight: $font-weight-semibold; } // Name.Tag
+pre .tok-nt { color: #660e7a; font-weight: $font-weight-semibold; } // Name.Tag
 pre .tok-nv { color: #19177C } // Name.Variable
 pre .tok-ow { color: #AA22FF; font-weight: $font-weight-semibold; } // Operator.Word
 pre .tok-w { color: #bbbbbb } // Text.Whitespace
