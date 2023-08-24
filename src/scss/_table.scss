@@ -39,7 +39,7 @@ th, td {
 }
 
 th {
-  font-weight: 500;
+  font-weight: $font-weight-light-bold;
   background-color: $table-heading-background;
   vertical-align: middle;
 }
