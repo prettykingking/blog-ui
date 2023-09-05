@@ -9,6 +9,22 @@ h5, h6 {
   font-weight: $font-weight-light-bold;
 }
 
+// Links
+a.external:after {
+  display: inline-block;
+  font-family: $bootstrap-icons-font !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f1c5";
+  margin-inline: $spacer * 0.25 0;
+}
+
 // Blockquotes
 blockquote {
   margin-bottom: $blockquote-margin-y;
