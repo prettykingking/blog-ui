@@ -45,8 +45,10 @@ ol {
   }
 }
 
-li, li p {
-  margin: $spacer * .75 0;
+li {
+  &, p, .code-listing {
+    margin: $spacer * .75 0;
+  }
 }
 
 dl {
