@@ -12,3 +12,20 @@ fine for any kind of writing in terms of comprehensive formatting.
 
 A sidebar for link to section is necessary as the page goes
 too long. I will implement it in the near future.
+
+
+== Development
+
+=== Start the local server
+
+----
+yarn start
+----
+
+After the server started, browse pages at `http://127.0.0.1:8081`.
+
+=== Build assets distribution
+
+----
+yarn build
+----
