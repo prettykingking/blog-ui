@@ -25,7 +25,11 @@ aside {
   margin-top: var(--aside-margin-y);
   margin-bottom: var(--aside-margin-y);
 
-  p:last-child {
+  > .label + * {
+    margin-top: 0;
+  }
+
+  > :last-child {
     margin-bottom: 0;
   }
 
