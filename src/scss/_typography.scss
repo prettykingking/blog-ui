@@ -86,7 +86,6 @@ pre {
 
 // Pygments Syntax Highlight
 pre .hll {
-  padding: $spacer * 0.125 $spacer * 0.25;
   background-color: #ffffcc;
 }
 // Comment
@@ -96,7 +95,6 @@ pre .tok-c {
 }
 // Error
 pre .tok-err {
-  padding: $spacer * 0.125 $spacer * 0.25;
   color: #c61717;
   background-color: #feeae4;
 }
