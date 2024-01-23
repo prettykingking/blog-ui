@@ -25,13 +25,7 @@
   margin-bottom: $spacer;
 
   .article-topic {
-    .topic-link {
-      color: $secondary-text-color;
-
-      &:hover {
-        color: $link-hover-color;
-      }
-    }
+    color: $secondary-text-color;
   }
 
   .article-date {

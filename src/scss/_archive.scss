@@ -92,6 +92,7 @@
 }
 
 .archive-topic {
+  font-size: $font-size-base * .75;
   margin: 0;
   color: $secondary-text-color;
 }
@@ -116,6 +117,7 @@
 }
 
 .archive-date {
+  font-size: $font-size-sm;
   color: $secondary-text-color;
   margin-top: $spacer * 0.5;
   margin-bottom: 0;
