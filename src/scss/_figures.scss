@@ -9,11 +9,6 @@ figure {
   & > :first-child {
     margin-bottom: 0;
   }
-
-  &.quote {
-    background-color: $code-bg;
-    padding: $spacer * 0.5;
-  }
 }
 
 figcaption, .image-desc {

@@ -62,9 +62,10 @@ dd {
   margin-bottom: 0;
 }
 
-mark, .mark {
+mark {
   background-color: $light-highlight-background;
   padding: $spacer * 0.125 $spacer * 0.25;
+  border-radius: $border-radius;
 }
 
 b, strong {
