@@ -86,10 +86,6 @@ code {
 pre {
   margin-bottom: 0;
   overflow: hidden;
-
-  &.lang-sh::before {
-    content: "$ ";
-  }
 }
 
 // Pygments Syntax Highlight
