@@ -3,26 +3,17 @@ p {
   margin-top: $spacer;
 }
 
+hr {
+  border-top: $primary-border;
+  margin-block: $spacer;
+  margin-inline: auto;
+  opacity: 1;
+  max-width: $spacer * 15;
+}
+
 // Headings
 h5, h6 {
   line-height: $line-height-base;
-  font-weight: $font-weight-light-bold;
-}
-
-// Links
-a.external:after {
-  display: inline-block;
-  font-family: $bootstrap-icons-font !important;
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f1c5";
-  margin-inline: $spacer * 0.25 0;
 }
 
 // Blockquotes
@@ -48,7 +39,7 @@ blockquote {
 
 .code-listing {
   margin: $spacer 0;
-  background-color: $light-code-background;
+  background-color: $code-bg;
   overflow: hidden;
 }
 
@@ -75,5 +66,5 @@ blockquote {
 }
 
 .example {
-  margin-left: $spacer * 1.875;
+  margin-left: $spacer * 2.5;
 }

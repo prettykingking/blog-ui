@@ -18,24 +18,25 @@
 }
 
 .article-eyebow {
-  font-size: $font-size-sm;
-  line-height: $line-height-sm;
-  color: $secondary-text-color;
+  margin-top: $spacer * .5;
 
-  margin-bottom: $spacer;
-
-  .article-topic {
+  .date {
     color: $secondary-text-color;
+    font-size: $font-size-sm;
   }
 
-  .article-date {
-    margin-top: $spacer * 0.25;
+  .topic {
+    font-size: $font-size-default * .8;
+    color: $topic-color;
+    background-color: $topic-bg;
+    padding: $spacer * 0.125 $spacer * 0.25;
+    border-radius: $border-radius;
   }
 }
 
 @include media-breakpoint-down(lg) {
   .article-eyebow {
-    margin-bottom: $spacer;
+    margin-top: $spacer * .25;
   }
 }
 
@@ -92,60 +93,63 @@
 
 ul {
   &.checklist {
-    list-style: none;
-
-    & li {
-      position: relative;
-    }
-
-    & li:before {
-      display: inline-block;
-      font-family: $bootstrap-icons-font !important;
+    li:before {
+      font-family: 'Material Symbols Sharp';
+      font-weight: normal;
       font-style: normal;
-      font-weight: $font-weight-normal !important;
-      font-variant: normal;
+      font-size: $font-size-default * 1.5;
+      line-height: 1;
+      letter-spacing: normal;
       text-transform: none;
-      line-height: 1.5;
-      vertical-align: -.125em;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      position: absolute;
-      left: -1.25rem;
+      left: -1.75rem;
+      top: -.1rem;
     }
 
-    & li.checked:before {
-      content: "\f270";
+    li.checked:before {
+      content: "\e5ca";
+      color: #34a853;
     }
 
-    & li.unchecked:before {
-      content: "\f28a";
+    li.unchecked:before {
+      content: "\e835";
+      color: #dadce0;
     }
   }
 
   &.toc {
-    list-style: none;
     margin-left: 0;
     margin-top: $spacer * 1.75;
     margin-bottom: $spacer * 1.5;
     padding-left: $spacer * .75;
-    border-left: 4px solid $primary;
+    border-left: 4px solid #3f51b5;
 
     ul {
-      list-style: none;
       margin-left: 0;
       padding-left: $spacer * .75;
     }
 
-    .toc-title {
+    li, p {
+      margin-block: $spacer * .25;
+    }
+
+    li:before {
+      content: none;
+    }
+
+    a.toc-title {
+      font-size: $font-size-default * .8;
       color: $body-color;
 
       &:hover {
         color: $link-color;
       }
-    }
-
-    .toc-heading .toc-title {
-      color: $secondary-text-color;
     }
   }
 }

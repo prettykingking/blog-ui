@@ -72,6 +72,10 @@
   .nav-item {
     margin: 0;
 
+    &:before {
+      content: none;
+    }
+
     & > .nav-link {
       color: $secondary-text-color;
       position: relative;

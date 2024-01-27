@@ -16,6 +16,12 @@
   @include list-unstyled();
 }
 
+.page-item {
+  &:before {
+    content: none;
+  }
+}
+
 .page-num {
   position: relative;
   padding: var(--#{$prefix}pagination-padding-y) var(--#{$prefix}pagination-padding-x);

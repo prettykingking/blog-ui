@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Article</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="/images/favicon-64x64.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/apple-touch-icon-180x180.png">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -12,8 +13,18 @@
 <div>
   <div class="header">
     <header class="header-logo-row no-tabs header-shadow">
-      <div class="main-container text-center">
-        <a href="/" class="header-title">杰的备忘录</a>
+      <div class="main-container">
+        <div class="component component-text">
+          <div class="row gx-0">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <div class="text-center">
+                <a href="/" class="header-title">杰的备忘录</a>
+              </div>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </div>
       </div>
     </header>
   </div>
@@ -23,12 +34,12 @@
       <div class="main-container">
             <article class="article">
               <div class="article-header component-text">
-                <div class="article-eyebow">
-                  <div class="article-topic">Update</div>
-                  <div class="article-date">June 13, 2023</div>
-                </div>
                 <div class="article-title">
                   <h1 class="h1">Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder.</h1>
+                </div>
+                <div class="article-eyebow">
+                  <span class="date">June 13, 2023</span>
+                  <span class="topic">Update</span>
                 </div>
                 <div class="article-subhead">
                   From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.
@@ -37,7 +48,9 @@
 
               <div class="component component-text">
                 <ul class="toc">
-                  <li class="toc-item toc-heading"><span class="toc-title">Table of Contents</span></li>
+                  <li class="toc-item toc-heading">
+                    <span class="toc-title">Table of Contents</span>
+                  </li>
                   <li class="toc-item"><a class="toc-title" href="#">1. Python Primer</a></li>
                   <li class="toc-item"><a class="toc-title" href="#">1. Python Primer</a></li>
                   <li class="toc-item"><a class="toc-title" href="#">2. Object-Oriented Programming</a></li>
@@ -107,7 +120,7 @@
                       <table>
                         <tbody>
                         <tr>
-                          <td>
+                          <td class="code">
                         <pre>error: 1954 Forbidden search
 absolutely fatal: operation lost in the dodecahedron of doom
 
@@ -151,15 +164,6 @@ Would you like to try again? y/n</pre>
               </div>
 
               <div class="component component-text">
-                <aside class="caution">
-                  <h6 class="h6 label">Caution</h6>
-                  <p>
-                    The EXT-X-MEDIA-SEQUENCE tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
-                  </p>
-                </aside>
-              </div>
-
-              <div class="component component-text">
                 <h2 class="component-header h2">STEM</h2>
 
                 <p>
@@ -188,8 +192,12 @@ Would you like to try again? y/n</pre>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
 
+                <hr/>
+                <hr/>
+                <hr/>
+
                 <p>
-                  In particular, use <em><var>N</var>xx</em> (with a specific digit in place of N) to indicate anything in the <em><var>N</var>00</em>-<em><var>N</var>99</em> range.
+                  In particular, use <em>Nxx</em> (with a specific digit in place of N) to indicate anything in the <em>N00</em>-<em>N99</em> range.
                 </p>
 
                 <div class="example">
@@ -269,10 +277,10 @@ Would you like to try again? y/n</pre>
                 <p><em>This line rendered as italicized text.</em></p>
                 <p>Sub text<sub>[<a href="#">1</a>]</sub>. Sup text<sup>[<a href="#">2</a>]</sup></p>
                 <p>
-                  <a href="https://asciidoctor.org" class="external">Asciidoctor</a> is a fast, open source, Ruby-based text processor for parsing AsciiDoc&#174; into a document model and converting it to output formats such as HTML 5, DocBook 5, manual pages, PDF, EPUB 3, and other formats.
+                  <a href="https://asciidoctor.org" class="external">Asciidoctor</a> is a fast, open source, Ruby-based text processor for parsing AsciiDoc&#174; into a document model and converting it to output formats such as HTML 5, <a href="https://asciidoctor.org" class="external">Asciidoctor</a> 我们的DocBook 5, manual pages, PDF, EPUB 3, and other formats.
                 </p>
                 <p>
-                  You could insert icon in text. Select <strong>MyApp</strong> <i class="bi bi-chevron-right"></i> <strong>Preferences</strong>, and then select the <strong>Language</strong> preference pane.
+                  You could insert icon in text. Select <strong>MyApp</strong> <span class="material-symbols-sharp">chevron_right</span> <strong>Preferences</strong>, and then select the <strong>Language</strong> preference pane.
                 </p>
               </div>
 
@@ -305,9 +313,14 @@ Would you like to try again? y/n</pre>
                     The <code>EXT-X-MEDIA-SEQUENCE</code> tag <a href="#">value</a> must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
                   </p>
                 </aside>
-              </div>
 
-              <div class="component component-text">
+                <aside class="caution">
+                  <h6 class="h6 label">Caution</h6>
+                  <p>
+                    The EXT-X-MEDIA-SEQUENCE tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
+                  </p>
+                </aside>
+
                 <aside class="warning">
                   <h6 class="h6 label">Warning</h6>
                   <p>
@@ -429,6 +442,8 @@ Would you like to try again? y/n</pre>
                     Someone famous in <cite title="Source Title">Source Title</cite>
                   </figcaption>
                 </figure>
+
+                <hr/>
               </div>
 
               <div class="component component-text">
@@ -471,6 +486,8 @@ Would you like to try again? y/n</pre>
                   </li>
                   <li>Scheme</li>
                 </ul>
+
+                <hr/>
 
                 <ol>
                   <li>C/C++</li>

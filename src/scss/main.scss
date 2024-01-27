@@ -1,23 +1,30 @@
+// Import Google fonts
+@import "fonts";
+
 @import "bootstrap/scss/functions";
 
 // Include any default variable overrides here
-$font-family-sans-serif: "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial;
-$font-family-monospace: "SF Mono", SFMono-Regular , ui-monospace, Menlo, monospace;
+$font-family-sans-serif: "Sorts Mill Goudy", "Helvetica Neue", Helvetica, sans-serif;
+$font-family-monospace: "JetBrains Mono", monospace;
 
 $body-color: #202124;
-$primary: #3f51b5;
-$secondary: #303f9f;
 
-$link-color: #1a73e8;
-$link-hover-color: #1a73e8;
+$link-color: #945424;
+$link-hover-color: #945424;
+$link-hover-decoration: underline;
 $link-decoration: none;
+
+$font-size-default: 1rem;
+$font-size-base: 1.1rem;
+$font-size-sm: 0.9rem;
 
 $h1-font-size: 2rem;
 $h2-font-size: 1.75rem;
 $h3-font-size: 1.5rem;
 $h4-font-size: 1.25rem;
-$h5-font-size: 1rem;
-$h6-font-size: 1rem;
+$h5-font-size: 1.1rem;
+$h6-font-size: 1.1rem;
+
 $headings-font-weight: 400;
 
 @import "bootstrap/scss/variables";
@@ -42,10 +49,6 @@ $headings-font-weight: 400;
 // Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "bootstrap/scss/utilities/api";
 
-// Bootstrap icons
-$bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
-@import "bootstrap-icons/font/bootstrap-icons";
-
 // Add additional custom code here
 @import "variables";
 @import "type";
@@ -56,8 +59,6 @@ $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 @import "archive";
 @import "notices";
 @import "pagination";
-@import "filter-bar";
-@import "topic";
 @import "article";
 @import "figures";
 @import "table";

@@ -7,22 +7,6 @@ kbd {
   border-radius: revert;
 }
 
-code {
-  background-color: $light-code-background;
-  padding: $spacer * 0.125 $spacer * 0.25;
-  color: $light-code-color;
-  font-weight: $font-weight-light-bold;
-}
-
-var {
-  color: $var-color;
-  font-weight: $font-weight-light-bold;
-}
-
-a code {
-  color: $contrast-link-color;
-}
-
 ul, ol {
   margin-left: $spacer * 2.5;
   margin-bottom: 0;
@@ -30,7 +14,20 @@ ul, ol {
 }
 
 ul {
-  list-style: disc outside;
+  list-style: none;
+
+  li {
+    position: relative;
+
+    &:before {
+      display: inline-block;
+      content: "✼";
+      position: absolute;
+      left: $spacer * -1.3;
+      top: $spacer * .2;
+      font-size: $font-size-base * .8;
+    }
+  }
 }
 
 ol {
@@ -74,8 +71,17 @@ b, strong {
   font-weight: $font-weight-semibold;
 }
 
+code, pre {
+  font-size: $font-size-sm;
+  color: $code-color;
+}
+
+code {
+  background-color: $code-bg-inline;
+  padding: $spacer * 0.125 $spacer * 0.25;
+}
+
 pre {
-  color: $light-code-color;
   margin-bottom: 0;
   overflow: hidden;
 
@@ -132,16 +138,16 @@ pre .tok-kr { color: #008000; font-weight: $font-weight-semibold } // Keyword.Re
 pre .tok-kt { color: #000080; font-weight: $font-weight-semibold; } // Keyword.Type
 pre .tok-m { color: #0000ff } // Literal.Number
 pre .tok-s { color: #008000 } // Literal.String
-pre .tok-na { color: $light-code-color } // Name.Attribute
+pre .tok-na { color: $code-color } // Name.Attribute
 pre .tok-nb { color: #008000 } // Name.Builtin
-pre .tok-nc { color: $light-code-color; } // Name.Class
+pre .tok-nc { color: $code-color; } // Name.Class
 pre .tok-no { color: #880000 } // Name.Constant
 pre .tok-nd { color: #808000 } // Name.Decorator
 pre .tok-ni { color: #717171; font-weight: $font-weight-semibold; } // Name.Entity
 pre .tok-ne { color: #CB3F38; font-weight: $font-weight-semibold; } // Name.Exception
-pre .tok-nf { color: $light-code-color; } // Name.Function
+pre .tok-nf { color: $code-color; } // Name.Function
 pre .tok-nl { color: #767600 } // Name.Label
-pre .tok-nn { color: $light-code-color; } // Name.Namespace
+pre .tok-nn { color: $code-color; } // Name.Namespace
 pre .tok-nt { color: #660e7a; font-weight: $font-weight-semibold; } // Name.Tag
 pre .tok-nv { color: #19177C } // Name.Variable
 pre .tok-ow { color: #AA22FF; font-weight: $font-weight-semibold; } // Operator.Word
@@ -165,7 +171,7 @@ pre .tok-sr { color: #A45A77 } // Literal.String.Regex
 pre .tok-s1 { color: #008000 } // Literal.String.Single
 pre .tok-ss { color: #19177C } // Literal.String.Symbol
 pre .tok-bp { color: #008000 } // Name.Builtin.Pseudo
-pre .tok-fm { color: $light-code-color } // Name.Function.Magic
+pre .tok-fm { color: $code-color } // Name.Function.Magic
 pre .tok-vc { color: #19177C } // Name.Variable.Class
 pre .tok-vg { color: #19177C } // Name.Variable.Global
 pre .tok-vi { color: #19177C } // Name.Variable.Instance

@@ -1,5 +1,4 @@
-// Variables
-
+// Custom variables
 $primary-text-color: #202124;
 $primary-text-rgba: rgba(0,0,0,.87);
 $secondary-text-color: #5f6368;
@@ -8,10 +7,8 @@ $tertiary-text-color: #bdc1c6;
 $tertiary-text-rgba: rgba(0,0,0,.26);
 
 $line-number-color: #999999;
-$var-color: #d01884;
 
 $primary-border: 1px solid #dadce0;
-$secondary-border: 1px solid #e8eaed;
 
 $table-heading-background: #e8eaed;
 $table-cell-background: hsla(0,0%,100%,.95);
@@ -19,16 +16,19 @@ $table-cell-background: hsla(0,0%,100%,.95);
 // header
 $header-shadow: 0 1px 2px 0 rgba($black, .3), 0 2px 6px 2px rgba($black, .15);
 
+// topic
+$topic-color: #326;
+$topic-bg: #eef;
+$topic-color-selected: #166;
+$topic-bg-selected: #aff;
+$topic-hover-bg: ddf;
+
 // background
 $light-highlight-background: #ffffcc;
 $light-background: #f5f5f7;
 $light-picture-background: #fafafa;
 
 // code
-$font-weight-light-bold: 500;
-$light-code-background: #f1f3f4;
-$light-code-color: #37474f;
-
-
-// links
-$contrast-link-color: #185abc;
+$code-bg-inline: #f1f1df;
+$code-bg: #f1f3f4;
+$code-color: #37474f;

@@ -48,9 +48,6 @@
   --archive-bg: #{$card-bg};
   // scss-docs-end card-css-vars
 
-  display: block;
-  text-decoration: none;
-  color: $body-color;
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
   height: var(--archive-height);
   word-wrap: break-word;
@@ -60,6 +57,7 @@
   padding: $spacer 0;
 
   &:hover {
+    text-decoration: none;
     color: $body-color;
   }
 }
@@ -91,15 +89,8 @@
   }
 }
 
-.archive-topic {
-  font-size: $font-size-base * .75;
-  margin: 0;
-  color: $secondary-text-color;
-}
-
 .archive-title {
   font-size: $h4-font-size;
-  margin-top: $spacer * .5;
   margin-bottom: 0;
 }
 
@@ -116,15 +107,30 @@
   }
 }
 
-.archive-date {
-  font-size: $font-size-sm;
-  color: $secondary-text-color;
+.archive-subtitle {
   margin-top: $spacer * 0.5;
-  margin-bottom: 0;
+
+  .date {
+    color: $secondary-text-color;
+    font-size: $font-size-default * .8;
+  }
+
+  .topic {
+    font-size: $font-size-default * .8;
+    color: $topic-color;
+    background-color: $topic-bg;
+    padding: $spacer * 0.125 $spacer * 0.25;
+    border-radius: $border-radius;
+
+    &.selected {
+      color: $topic-color-selected;
+      background-color: $topic-bg-selected;
+    }
+  }
 }
 
 @include media-breakpoint-down(md) {
-  .archive-date {
+  .archive-subtitle {
     margin-top: $spacer * .25;
   }
 }

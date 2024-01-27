@@ -1,7 +1,6 @@
 // Notices
 
 aside {
-  --aside-margin-y: #{$spacer};
   --aside-note-bg: #f5f5f7;
   --aside-note-border: #696969;
   --aside-note-color: #696969;
@@ -22,8 +21,7 @@ aside {
   border-style: solid;
   border-radius: .75rem;
   padding: 1rem;
-  margin-top: var(--aside-margin-y);
-  margin-bottom: var(--aside-margin-y);
+  margin-block: $spacer;
 
   > .label + * {
     margin-top: 0;
