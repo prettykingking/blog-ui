@@ -39,22 +39,9 @@
 }
 
 .archive {
-  // scss-docs-start card-css-vars
-  --archive-title-spacer-y: #{$card-title-spacer-y};
-  --archive-border-width: #{$card-border-width};
-  --archive-border-color: #{$card-border-color};
-  --archive-border-radius: #{$card-border-radius};
-  --archive-height: #{$card-height};
-  --archive-bg: #{$card-bg};
-  // scss-docs-end card-css-vars
-
-  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
-  height: var(--archive-height);
   word-wrap: break-word;
-  background-color: var(--archive-bg);
   background-clip: border-box;
-  border-top: var(--archive-border-width) solid var(--archive-border-color);
-  padding: $spacer 0;
+  padding-bottom: $spacer;
 
   &:hover {
     text-decoration: none;
@@ -67,14 +54,6 @@
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   color: var(--archive-color);
-}
-
-.archive-content {
-  margin-left: $spacer * 2;
-
-  &.archive-no-picture {
-    margin-left: 0;
-  }
 }
 
 @include media-breakpoint-down(lg) {
@@ -108,8 +87,6 @@
 }
 
 .archive-subtitle {
-  margin-top: $spacer * 0.5;
-
   .date {
     color: $secondary-text-color;
     font-size: $font-size-default * .8;
@@ -128,38 +105,3 @@
     }
   }
 }
-
-@include media-breakpoint-down(md) {
-  .archive-subtitle {
-    margin-top: $spacer * .25;
-  }
-}
-
-.archive-cover {
-  line-height: 0;
-  text-align: center;
-}
-
-.archive-image-box {
-  display: inline-block;
-  background-color: $light-picture-background;
-  border-radius: var(--archive-border-radius);
-  overflow: hidden;
-
-  .archive-image {
-    width: 259px;
-  }
-
-  @include media-breakpoint-down(lg) {
-    .archive-image {
-      width: 264px;
-    }
-  }
-
-  @include media-breakpoint-down(md) {
-    .archive-image {
-      width: 106px;
-    }
-  }
-}
-

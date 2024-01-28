@@ -17,9 +17,11 @@
   }
 }
 
-.article-eyebow {
-  margin-top: $spacer * .5;
+.article-title {
+  margin-bottom: 0;
+}
 
+.article-subtitle {
   .date {
     color: $secondary-text-color;
     font-size: $font-size-sm;
@@ -34,20 +36,14 @@
   }
 }
 
-@include media-breakpoint-down(lg) {
-  .article-eyebow {
-    margin-top: $spacer * .25;
-  }
-}
-
-.article-subhead {
+.article-desc {
   margin-top: $spacer;
   font-size: $h4-font-size;
   line-height: $line-height-sm;
 }
 
 @include media-breakpoint-down(lg) {
-  .article-subhead {
+  .article-desc {
     margin-top: $spacer;
     font-size: $h5-font-size;
   }
