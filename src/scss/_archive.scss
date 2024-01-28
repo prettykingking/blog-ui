@@ -49,25 +49,6 @@
   }
 }
 
-.archive-body {
-  // Enable `flex-grow: 1` for decks and groups so that card blocks take up
-  // as much space as possible, ensuring footers are aligned to the bottom.
-  flex: 1 1 auto;
-  color: var(--archive-color);
-}
-
-@include media-breakpoint-down(lg) {
-  .archive-content {
-    margin-left: $spacer * 1.5;
-  }
-}
-
-@include media-breakpoint-down(md) {
-  .archive-content {
-    margin-left: $spacer;
-  }
-}
-
 .archive-title {
   font-size: $h4-font-size;
   margin-bottom: 0;
