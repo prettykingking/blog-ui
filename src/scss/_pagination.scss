@@ -1,52 +1,18 @@
 .pagination {
-  // scss-docs-start pagination-css-vars
-  --#{$prefix}pagination-padding-x: #{$pagination-padding-x};
-  --#{$prefix}pagination-padding-y: #{$pagination-padding-y};
-  @include rfs($pagination-font-size, --#{$prefix}pagination-font-size);
-  --#{$prefix}pagination-color: #{$pagination-color};
-  --#{$prefix}pagination-bg: #{$pagination-bg};
-  --#{$prefix}pagination-hover-color: #{$pagination-hover-color};
-  --#{$prefix}pagination-focus-color: #{$pagination-focus-color};
-  --#{$prefix}pagination-focus-bg: #{$pagination-focus-bg};
-  // scss-docs-end pagination-css-vars
-
   display: flex;
   margin-left: 0;
-  border-top: $border-width $border-style $border-color;
-  @include list-unstyled();
-}
+  margin-block: $spacer;
 
-.page-item {
-  &:before {
-    content: none;
+  li {
+    margin-block: 0;
+
+    &:before {
+      content: none;
+    }
   }
 }
 
-.page-num {
-  position: relative;
-  padding: var(--#{$prefix}pagination-padding-y) var(--#{$prefix}pagination-padding-x);
-  @include font-size(var(--#{$prefix}pagination-font-size));
-  background-color: var(--#{$prefix}pagination-bg);
-}
-
-.page-link {
-  position: relative;
-  display: block;
-  padding: var(--#{$prefix}pagination-padding-y) var(--#{$prefix}pagination-padding-x);
-  @include font-size(var(--#{$prefix}pagination-font-size));
-  color: var(--#{$prefix}pagination-color);
-  text-decoration: if($link-decoration == none, null, none);
-  background-color: var(--#{$prefix}pagination-bg);
-
-  &:hover {
-    z-index: 2;
-    color: var(--#{$prefix}pagination-hover-color);
-    text-decoration: underline;
-  }
-
-  &:focus {
-    z-index: 3;
-    color: var(--#{$prefix}pagination-focus-color);
-    background-color: var(--#{$prefix}pagination-focus-bg);
-  }
+.page-num, .page-link {
+  display: inline-block;
+  padding-inline: $spacer * 0.75;
 }

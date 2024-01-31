@@ -2,19 +2,10 @@
 
 .article {
   padding-top: $spacer * 1.5;
-  padding-bottom: $spacer * 1.5;
 }
 
 .article-header {
-  margin-right: auto;
-  margin-left: auto;
-
-  &:after {
-    display: block;
-    content: '';
-    margin-top: $spacer * 1.5;
-    border-top: $primary-border;
-  }
+  margin-inline: auto;
 }
 
 .article-title {
@@ -25,14 +16,6 @@
   .date {
     color: $secondary-text-color;
     font-size: $font-size-sm;
-  }
-
-  .topic {
-    font-size: $font-size-default * .8;
-    color: $topic-color;
-    background-color: $topic-bg;
-    padding: $spacer * 0.125 $spacer * 0.25;
-    border-radius: $border-radius;
   }
 }
 
@@ -87,6 +70,12 @@
   margin-bottom: $spacer * 1.5;
 }
 
+.line {
+  margin-block: $spacer;
+  height: 3px;
+  background-color: #644934;
+}
+
 ul {
   &.checklist {
     li:before {
@@ -111,13 +100,18 @@ ul {
       content: "\f584";
     }
   }
+}
 
+.toc-heading {
+  margin-top: $spacer;
+  margin-bottom: 0;
+}
+
+ul {
   &.toc {
     margin-left: 0;
-    margin-top: $spacer * 1.75;
-    margin-bottom: $spacer * 1.5;
     padding-left: $spacer * .75;
-    border-left: 4px solid #3f51b5;
+    border-left: 3px solid #644934;
 
     ul {
       margin-left: 0;
@@ -125,20 +119,16 @@ ul {
     }
 
     li, p {
-      margin-block: $spacer * .25;
+      margin-block: 0;
     }
 
     li:before {
       content: none;
     }
 
-    a.toc-title {
+    a {
       font-size: $font-size-default * .8;
-      color: $body-color;
-
-      &:hover {
-        color: $link-color;
-      }
+      color: #655;
     }
   }
 }

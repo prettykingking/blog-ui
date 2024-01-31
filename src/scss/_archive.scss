@@ -2,46 +2,46 @@
 // Base styles
 //
 
-.archives {
+.archive {
   margin-left: auto;
   margin-right: auto;
   width: 653px;
 
-  .archive-group-title {
+  .archive-date {
     margin-top: $spacer * 1.5;
     margin-bottom: $spacer;
     font-size: $h3-font-size;
   }
 
   @include media-breakpoint-down(lg) {
-    .archive-group-title {
+    .archive-date {
       font-size: $h4-font-size;
     }
   }
 
   @include media-breakpoint-down(md) {
-    .archive-group-title {
+    .archive-date {
       font-size: $h5-font-size;
     }
   }
 }
 
 @include media-breakpoint-down(lg) {
-  .archives {
+  .archive {
     width: 576px;
   }
 }
 
 @include media-breakpoint-down(md) {
-  .archives {
+  .archive {
     width: 87.5%;
   }
 }
 
-.archive {
+.archive-record {
   word-wrap: break-word;
   background-clip: border-box;
-  padding-bottom: $spacer;
+  margin-bottom: $spacer;
 
   &:hover {
     text-decoration: none;
@@ -72,17 +72,17 @@
     color: $secondary-text-color;
     font-size: $font-size-default * .8;
   }
+}
 
-  .topic {
-    font-size: $font-size-default * .8;
-    color: $topic-color;
-    background-color: $topic-bg;
-    padding: $spacer * 0.125 $spacer * 0.25;
-    border-radius: $border-radius;
+.topic {
+  font-size: $font-size-default * .8;
+  color: $topic-color;
+  background-color: $topic-bg;
+  padding: $spacer * 0.125 $spacer * 0.25;
+  border-radius: $border-radius;
 
-    &.selected {
-      color: $topic-color-selected;
-      background-color: $topic-bg-selected;
-    }
+  &.selected {
+    color: $topic-color-selected;
+    background-color: $topic-bg-selected;
   }
 }
