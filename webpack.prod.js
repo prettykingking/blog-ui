@@ -41,7 +41,14 @@ const webpackConfig = () => {
           test: /\.(woff|woff2)$/,
           type: 'asset/resource',
           generator: {
-            filename: 'static/fonts/[hash][ext][query]',
+            filename: 'static/fonts/[hash][ext]',
+          }
+        },
+        {
+          test: /\.(png|jpg|gif)$/,
+          type: 'asset/resource',
+          generator: {
+            filename: 'static/images/[hash][ext]',
           }
         },
         {

@@ -32,6 +32,21 @@ const webpackConfig = () => {
           }
         },
         {
+          // see https://webpack.js.org/guides/asset-modules/
+          test: /\.(woff|woff2)$/,
+          type: 'asset/resource',
+          generator: {
+            filename: 'static/fonts/[hash][ext]',
+          }
+        },
+        {
+          test: /\.(png|jpg|gif)$/,
+          type: 'asset/resource',
+          generator: {
+            filename: 'static/images/[hash][ext]',
+          }
+        },
+        {
           test: /\.(scss)$/,
           use: [
             {

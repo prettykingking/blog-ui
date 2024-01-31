@@ -73,7 +73,7 @@
 .line {
   margin-block: $spacer;
   height: 3px;
-  background-color: #644934;
+  background: url("/src/images/border.png") repeat-x;
 }
 
 ul {
@@ -111,7 +111,7 @@ ul {
   &.toc {
     margin-left: 0;
     padding-left: $spacer * .75;
-    border-left: 3px solid #644934;
+    border-left: 3px solid #d6d7d5;
 
     ul {
       margin-left: 0;
