@@ -72,7 +72,7 @@
   .nav-item {
     margin: 0;
 
-    &:before {
+    &::before {
       content: none;
     }
 

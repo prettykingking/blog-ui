@@ -78,7 +78,7 @@
 
 ul {
   &.checklist {
-    li:before {
+    li::before {
       font-family: $bootstrap-icons-font;
       font-style: normal;
       font-weight: $font-weight-normal;
@@ -87,17 +87,17 @@ ul {
       text-transform: none;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      left: $spacer * -1.5;
-      top: 0;
+      left: -1.5rem;
+      top: -0.1rem;
     }
 
-    li.checked:before {
-      content: "\f272";
+    li.checked::before {
+      content: "\f26a";
       color: #34a853;
     }
 
-    li.unchecked:before {
-      content: "\f584";
+    li.unchecked::before {
+      content: "\f28a";
     }
   }
 }
@@ -122,7 +122,7 @@ ul {
       margin-block: 0;
     }
 
-    li:before {
+    li::before {
       content: none;
     }
 

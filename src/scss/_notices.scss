@@ -1,87 +1,84 @@
 // Notices
 
 aside {
-  --aside-note-bg: #f5f5f7;
-  --aside-note-border: #696969;
-  --aside-note-color: #696969;
-  --aside-tip-bg: #faffff;
-  --aside-tip-border: #007c78;
-  --aside-tip-color: #007c78;
-  --aside-important-bg: #fffbf2;
-  --aside-important-border: #9e6700;
+  --aside-note-color: #8bb9ff;
   --aside-important-color: #9e6700;
-  --aside-caution-bg: #fff9f4;
-  --aside-caution-border: #bf4800;
-  --aside-caution-color: #bf4800;
-  --aside-warning-bg: #fff2f4;
-  --aside-warning-border: #e30000;
   --aside-warning-color: #e30000;
 
-  border-width: $border-width;
-  border-style: solid;
-  border-radius: .75rem;
-  padding: 1rem;
   margin-block: $spacer;
 
-  > .label + * {
-    margin-top: 0;
+  .heading {
+    display: inline-block;
+    width: 8rem;
+    border-top: $primary-border;
+    border-left: $primary-border;
+    padding: 0.5rem 0 0 2.5rem;
+    position: relative;
+
+    &::before {
+      font-family: $bootstrap-icons-font;
+      font-style: normal;
+      font-weight: $font-weight-normal;
+      font-variant: normal;
+      font-size: $font-size-base;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: absolute;
+      left: 1rem;
+      top: 0.3rem;
+    }
   }
 
-  :last-child {
-    margin-bottom: 0;
-  }
+  .body {
+    position: relative;
+    padding-inline: $spacer * 2.5;
+    padding-bottom: $spacer * 0.5;
 
-  code {
-    background-color: transparent;
+    :first-child {
+      margin-top: 0;
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      display: inline-block;
+      width: 8rem;
+      height: 2.25rem;
+      border-bottom: $primary-border;
+      border-right: $primary-border;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      content: "";
+    }
   }
 }
 
-aside.note {
-  background-color: var(--aside-note-bg);
-  border-color: var(--aside-note-border);
-  box-shadow: 0 0 1px 0 var(--aside-note-border) inset, 0 0 1px 0 var(--aside-note-border);
-
-  & > .label {
-    color: var(--aside-note-color);
-  }
-}
-
-aside.tip {
-  background-color: var(--aside-tip-bg);
-  border-color: var(--aside-tip-border);
-  box-shadow: 0 0 1px 0 var(--aside-tip-border) inset, 0 0 1px 0 var(--aside-tip-border);
-
-  & > .label {
-    color: var(--aside-tip-color);
+aside.note, aside.tip {
+  .heading {
+    &::before {
+      color: var(--aside-note-color);
+      content: "\f586";
+    }
   }
 }
 
 aside.important {
-  background-color: var(--aside-important-bg);
-  border-color: var(--aside-important-border);
-  box-shadow: 0 0 1px 0 var(--aside-important-border) inset, 0 0 1px 0 var(--aside-important-border);
-
-  & > .label {
-    color: var(--aside-important-color);
+  .heading {
+    &::before {
+      color: var(--aside-important-color);
+      content: "\f332";
+    }
   }
 }
 
-aside.caution {
-  background-color: var(--aside-caution-bg);
-  border-color: var(--aside-caution-border);
-  box-shadow: 0 0 1px 0 var(--aside-caution-border) inset, 0 0 1px 0 var(--aside-caution-border);
-
-  & > .label {
-    color: var(--aside-caution-color);
-  }
-}
-
-aside.warning {
-  background-color: var(--aside-warning-bg);
-  border-color: var(--aside-warning-border);
-  box-shadow: 0 0 1px 0 var(--aside-warning-border) inset, 0 0 1px 0 var(--aside-warning-border);
-
-  & > .label {
-    color: var(--aside-warning-color);
+aside.caution, aside.warning {
+  .heading {
+    &::before {
+      color: var(--aside-warning-color);
+      content: "\f33a";
+    }
   }
 }

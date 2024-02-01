@@ -6,7 +6,7 @@
   li {
     margin-block: 0;
 
-    &:before {
+    &::before {
       content: none;
     }
   }

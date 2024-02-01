@@ -20,20 +20,6 @@ h5, h6 {
   margin-block: 0;
   margin-inline: $spacer * 2.5;
   position: relative;
-
-  &:before {
-    display: inline-block;
-    font-family: $bootstrap-icons-font;
-    font-style: normal;
-    font-weight: $font-weight-normal;
-    font-variant: normal;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f6b0";
-    position: absolute;
-    left: -1.5rem;
-  }
 }
 
 .quote-footer {
