@@ -26,9 +26,7 @@ h5, h6 {
 }
 
 .quote {
-  margin-block: 0;
-  margin-inline: $spacer * 2.5;
-  position: relative;
+  margin: 0 2.5rem;
 }
 
 .quote-footer {
@@ -68,5 +66,5 @@ h5, h6 {
 }
 
 .example {
-  margin-left: $spacer * 2.5;
+  margin-left: 2.5rem;
 }
