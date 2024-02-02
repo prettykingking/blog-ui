@@ -45,7 +45,7 @@ const webpackConfig = () => {
           }
         },
         {
-          test: /\.(png|jpg|gif)$/,
+          test: /\.(png|jpg|gif|svg)$/,
           type: 'asset/resource',
           generator: {
             filename: 'static/images/[hash][ext]',

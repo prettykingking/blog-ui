@@ -2,6 +2,8 @@
   display: flex;
   margin-left: 0;
   margin-block: $spacer;
+  padding-top: 0.75rem;
+  border-top: $primary-border;
 
   li {
     margin-block: 0;

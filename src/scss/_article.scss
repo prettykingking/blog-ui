@@ -70,12 +70,6 @@
   margin-bottom: $spacer * 1.5;
 }
 
-.line {
-  margin-block: $spacer;
-  height: 3px;
-  background: url("/src/images/border.png") repeat-x;
-}
-
 ul {
   &.checklist {
     li::before {
@@ -92,7 +86,7 @@ ul {
     }
 
     li.checked::before {
-      content: "\f26a";
+      content: "\f270";
       color: #34a853;
     }
 

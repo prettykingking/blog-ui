@@ -1,18 +1,18 @@
 // Notices
 
 aside {
-  --aside-note-color: #8bb9ff;
-  --aside-important-color: #9e6700;
-  --aside-warning-color: #e30000;
+  --aside-note-color: #303f9f;
+  --aside-important-color: #ad9372;
+  --aside-caution-color: #b31412;
+  --aside-warning-color: #a50e0e;
 
   margin-block: $spacer;
 
   .heading {
     display: inline-block;
-    width: 8rem;
     border-top: $primary-border;
     border-left: $primary-border;
-    padding: 0.5rem 0 0 2.5rem;
+    padding: 0.5rem 1rem 0 2.5rem;
     position: relative;
 
     &::before {
@@ -26,7 +26,7 @@ aside {
       -moz-osx-font-smoothing: grayscale;
       position: absolute;
       left: 1rem;
-      top: 0.3rem;
+      top: 0.4rem;
     }
   }
 
@@ -58,8 +58,8 @@ aside {
 
 aside.note, aside.tip {
   .heading {
+    color: var(--aside-note-color);
     &::before {
-      color: var(--aside-note-color);
       content: "\f586";
     }
   }
@@ -67,17 +67,26 @@ aside.note, aside.tip {
 
 aside.important {
   .heading {
+    color: var(--aside-important-color);
     &::before {
-      color: var(--aside-important-color);
+      content: "\f46e";
+    }
+  }
+}
+
+aside.caution {
+  .heading {
+    color: var(--aside-caution-color);
+    &::before {
       content: "\f332";
     }
   }
 }
 
-aside.caution, aside.warning {
+aside.warning {
   .heading {
+    color: var(--aside-warning-color);
     &::before {
-      color: var(--aside-warning-color);
       content: "\f33a";
     }
   }

@@ -3,12 +3,21 @@ p {
   margin-top: $spacer;
 }
 
-hr {
-  border-top: $primary-border;
+hr, .line {
   margin-block: $spacer;
-  margin-inline: auto;
-  opacity: 1;
+  background: url("/src/images/border.png") repeat-x;
+}
+
+.line {
+  height: 3px;
+}
+
+hr {
+  height: 1px;
   max-width: $spacer * 15;
+  margin-inline: auto;
+  border-top: none;
+  opacity: 1;
 }
 
 // Headings
@@ -26,7 +35,7 @@ h5, h6 {
   font-size: $font-size-sm;
 
   &::before {
-    content: "\2014\00A0"; // em dash, nbsp
+    content: "\2014\2014\00A0"; // em dash, nbsp
   }
 }
 
