@@ -38,13 +38,13 @@ h5, h6 {
 }
 
 .code-listing {
-  margin: $spacer 0;
+  margin-block: $spacer;
   background-color: $code-bg;
-  overflow: hidden;
 }
 
 .code-wrapper {
-  overflow-x: auto;
+  max-height: 600px;
+  overflow: auto;
 
   tr {
     border-bottom: none;
