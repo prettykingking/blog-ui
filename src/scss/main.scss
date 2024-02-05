@@ -40,7 +40,6 @@ $headings-font-weight: 400;
 // Optionally include any other parts as needed
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-@import "bootstrap/scss/nav";
 
 // Helpers
 @import "bootstrap/scss/helpers";
@@ -56,6 +55,7 @@ $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 @import "variables";
 @import "type";
 @import "typography";
+@import "button";
 @import "header";
 @import "content";
 @import "footer";

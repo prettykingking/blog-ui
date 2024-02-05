@@ -45,6 +45,7 @@ h5, h6 {
 .code-wrapper {
   max-height: 600px;
   overflow: auto;
+  position: relative;
 
   tr {
     border-bottom: none;
@@ -63,6 +64,14 @@ h5, h6 {
       }
     }
   }
+}
+
+.copy-code {
+  display: inline-block;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  background-color: $white;
 }
 
 .example {
