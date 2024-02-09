@@ -68,10 +68,16 @@ h5, h6 {
 
 .copy-code {
   display: inline-block;
+  background-color: $white;
+  border-radius: $border-radius;
   position: absolute;
   top: 0.25rem;
   right: 0.25rem;
-  background-color: $white;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
 }
 
 .example {
