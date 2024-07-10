@@ -1,8 +1,8 @@
 // Header
 
 @mixin link-after($border-color) {
-  display: block;
-  border-top: map-get($border-widths, 3) solid $border-color;
+  display: inline-block;
+  border-top: 3px solid $border-color;
   border-radius: $border-radius $border-radius 0 0;
   content: "";
   position: absolute;
@@ -64,40 +64,49 @@
     background-color: $white;
     position: relative;
   }
+}
 
-  .nav {
-    margin-left: 0;
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 0;
+}
+
+.nav-item {
+  margin-block: 0;
+
+  &::before {
+    content: none;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  color: $secondary-text-color;
+  position: relative;
+
+  &:hover {
+    color: $secondary-text-color;
+    text-decoration: none;
+
+    &::after {
+      @include link-after($secondary-text-color);
+    }
   }
 
-  .nav-item {
-    margin: 0;
+  &.active {
+    color: $body-color;
 
-    &::before {
-      content: none;
+    &::after {
+      @include link-after($body-color);
     }
+  }
+}
 
-    & > .nav-link {
-      color: $secondary-text-color;
-      position: relative;
-      padding: $spacer * .75 var(--#{$prefix}nav-link-padding-x);
-
-      &:hover::after {
-        @include link-after($secondary-text-color);
-      }
-    }
-
-    @include media-breakpoint-down(md) {
-      & > .nav-link {
-        padding: $spacer * .5 var(--#{$prefix}nav-link-padding-x);
-      }
-    }
-
-    &[active] > .nav-link {
-      color: $body-color;
-
-      &::after {
-        @include link-after($body-color);
-      }
-    }
+@include media-breakpoint-down(md) {
+  .nav-link {
+    padding: 0.5rem 1rem;
   }
 }

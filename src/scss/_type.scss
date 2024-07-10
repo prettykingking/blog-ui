@@ -27,7 +27,7 @@ h5, h6 {
 }
 
 .quote {
-  margin: 0 2.5rem;
+  margin: 1rem 1rem 1rem 2.5rem;
 }
 
 .quote-footer {
@@ -39,7 +39,7 @@ h5, h6 {
 }
 
 .code-listing {
-  margin: $spacer 0;
+  margin-block: $spacer;
   padding: $spacer;
   border-radius: $border-radius-lg;
   background-color: rgba(25,25,28,0.05);
@@ -47,7 +47,9 @@ h5, h6 {
 }
 
 .code-wrapper {
-  overflow-x: auto;
+  max-height: 600px;
+  overflow: auto;
+  position: relative;
 
   tr {
     border-bottom: none;
@@ -68,6 +70,20 @@ h5, h6 {
       }
     }
   }
+}
+
+.copy-code {
+  display: inline-block;
+  background-color: $white;
+  border-radius: $border-radius;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
 }
 
 .example {

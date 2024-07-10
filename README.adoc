@@ -10,8 +10,12 @@ carefully designed according to many documentation style guides. e.g. https://de
 The UI is particularly made for technical writers. It is
 fine for any kind of writing in terms of comprehensive formatting.
 
-A sidebar for link to section is necessary as the page goes
-too long. I will implement it in the near future.
+== Features
+
+* [x] Responsive page layout
+* [x] Auto-hide header on scroll
+* [ ] Page navigation sidebar
+* [ ] Copy code
 
 
 == Development

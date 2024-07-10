@@ -101,28 +101,55 @@ ul {
   margin-bottom: 0;
 }
 
-ul {
-  &.toc {
+ul.toc-list {
+  margin-left: 0;
+  padding-left: $spacer * .75;
+  border-left: 1px solid #d6d7d5;
+
+  ul {
     margin-left: 0;
     padding-left: $spacer * .75;
-    border-left: 3px solid #d6d7d5;
-
-    ul {
-      margin-left: 0;
-      padding-left: $spacer * .75;
-    }
-
-    li, p {
-      margin-block: 0;
-    }
-
-    li::before {
-      content: none;
-    }
-
-    a {
-      font-size: $font-size-default * .8;
-      color: #655;
-    }
   }
+
+  li, p {
+    margin-block: 0;
+  }
+
+  li::before {
+    content: none;
+  }
+
+  a {
+    font-size: $font-size-default * .8;
+    color: #655;
+  }
+}
+
+.btn-toc {
+  padding: 0;
+  margin: 0 0.25rem;
+  color: #655;
+  line-height: 1;
+
+  &::before {
+    display: inline-block;
+    margin-bottom: -0.5rem;
+    font-family: $bootstrap-icons-font;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    font-variant: normal;
+    font-size: $font-size-base;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+  }
+}
+
+.expand-more::before {
+  content: "\f5d4";
+}
+
+.expand-less::before {
+  content: "\f27c";
 }
