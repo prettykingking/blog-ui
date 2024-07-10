@@ -1,6 +1,7 @@
 // paragraph
 p {
   margin-top: $spacer;
+  margin-bottom: 0;
 }
 
 hr, .line {
@@ -39,7 +40,9 @@ h5, h6 {
 
 .code-listing {
   margin: $spacer 0;
-  background-color: $code-bg;
+  padding: $spacer;
+  border-radius: $border-radius-lg;
+  background-color: rgba(25,25,28,0.05);
   overflow: hidden;
 }
 
@@ -55,9 +58,11 @@ h5, h6 {
   }
 
   td {
-    background-color: transparent;
+    border: none;
+    padding: 0;
 
     &.linenos {
+      padding-right: $spacer * 0.5;
       pre {
         color: $line-number-color;
       }

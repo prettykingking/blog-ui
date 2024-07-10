@@ -5,88 +5,56 @@ aside {
   --aside-important-color: #ad9372;
   --aside-caution-color: #b31412;
   --aside-warning-color: #a50e0e;
+  --aside-note-bg: rgba(25,25,28,0.05);
 
   margin-block: $spacer;
+  padding: $spacer;
+  border-radius: $border-radius;
+  color: $secondary-text-color;
+  position: relative;
 
-  .heading {
-    display: inline-block;
-    border-top: $primary-border;
-    border-left: $primary-border;
-    padding: 0.5rem 2.5rem 0;
-    position: relative;
-
-    &::before {
-      font-family: $bootstrap-icons-font;
-      font-style: normal;
-      font-weight: $font-weight-normal;
-      font-variant: normal;
-      font-size: $font-size-base;
-      text-transform: none;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      position: absolute;
-      left: 1rem;
-      top: 0.4rem;
-    }
+  &::before {
+    font-family: $bootstrap-icons-font;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    font-variant: normal;
+    font-size: $font-size-base;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: $spacer;
+    left: $spacer;
   }
 
-  .body {
-    position: relative;
-    padding: 0 2.5rem 0.5rem 2.5rem;
+  .prompt-content {
+    padding-left: $spacer * 2;
 
     :first-child {
       margin-top: 0;
     }
-    :last-child {
-      margin-bottom: 0;
-    }
-
-    &::after {
-      display: inline-block;
-      width: 8rem;
-      height: 2.25rem;
-      border-bottom: $primary-border;
-      border-right: $primary-border;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      content: "";
-    }
   }
 }
 
-aside.note, aside.tip {
-  .heading {
-    color: var(--aside-note-color);
-    &::before {
-      content: "\f586";
-    }
+aside.tip {
+  background-color: rgba(25,25,28,0.05);
+  &::before {
+    content: "\f586";
   }
 }
 
-aside.important {
-  .heading {
-    color: var(--aside-important-color);
-    &::before {
-      content: "\f46e";
-    }
+aside.note, aside.important {
+  background-color: rgba(77,187,95,0.2);
+  &::before {
+    color: #4dbb5f;
+    content: "\f332";
   }
 }
 
-aside.caution {
-  .heading {
-    color: var(--aside-caution-color);
-    &::before {
-      content: "\f332";
-    }
-  }
-}
-
-aside.warning {
-  .heading {
-    color: var(--aside-warning-color);
-    &::before {
-      content: "\f33a";
-    }
+aside.caution, aside.warning {
+  background-color: rgba(244,92,74,0.2);
+  &::before {
+    color: #f45c4a;
+    content: "\f33a";
   }
 }
