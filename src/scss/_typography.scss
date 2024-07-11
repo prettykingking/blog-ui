@@ -45,6 +45,10 @@ ol {
 }
 
 li {
+  > ul, > ol {
+    margin-top: 0;
+  }
+
   &, p, .code-listing {
     margin-top: $spacer * .75;
   }
