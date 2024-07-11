@@ -5,7 +5,7 @@ p {
 }
 
 hr, .line {
-  margin-block: $spacer;
+  margin-top: $spacer;
   background: url("/src/images/border.png") repeat-x;
 }
 
@@ -27,14 +27,20 @@ h5, h6 {
 }
 
 .quote {
-  margin: 1rem 1rem 0 2.5rem;
+  margin-top: $spacer;
+  padding: $spacer;
+  border: 1px solid #d1d1d2;
+
+  :first-child {
+    margin-top: 0;
+  }
 }
 
 .quote-footer {
   font-size: $font-size-sm;
 
   &::before {
-    content: "\2014\2014\00A0"; // em dash, nbsp
+    content: "\2014\00A0"; // em dash, nbsp
   }
 }
 
@@ -71,6 +77,17 @@ h5, h6 {
   right: 0.5rem;
 }
 
-.example {
-  margin-left: 2.5rem;
+.procedure {
+  margin-top: $spacer;
+  padding: $spacer;
+  border: 1px solid #d1d1d2;
+
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+.procedure-title {
+  font-size: $spacer * 1.25;
+  font-weight: $font-weight-semibold;
 }
