@@ -70,32 +70,6 @@
   margin-bottom: $spacer * 1.5;
 }
 
-ul {
-  &.checklist {
-    li::before {
-      font-family: $bootstrap-icons-font;
-      font-style: normal;
-      font-weight: $font-weight-normal;
-      font-variant: normal;
-      font-size: $font-size-base;
-      text-transform: none;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      left: -1.5rem;
-      top: -0.1rem;
-    }
-
-    li.checked::before {
-      content: "\f270";
-      color: #34a853;
-    }
-
-    li.unchecked::before {
-      content: "\f28a";
-    }
-  }
-}
-
 .toc-heading {
   margin-top: $spacer;
   margin-bottom: 0;
