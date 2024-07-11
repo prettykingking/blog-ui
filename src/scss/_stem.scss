@@ -3,7 +3,7 @@
 .stem-listing {
   overflow: hidden;
   line-height: $line-height-base;
-  margin: $spacer 0;
+  margin-top: $spacer;
 
   .stem {
     overflow-x: auto;

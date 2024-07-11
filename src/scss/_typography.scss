@@ -44,7 +44,7 @@ ol {
 
 li {
   &, p, .code-listing {
-    margin: $spacer * .75 0;
+    margin-top: $spacer * .75;
   }
 }
 
@@ -54,7 +54,7 @@ dl {
 
 dt {
   font-weight: $font-weight-semibold;
-  margin: $spacer 0;
+  margin-top: $spacer;
 }
 
 dd {
@@ -137,14 +137,14 @@ pre .tok-m { color: #1750eb } // Literal.Number
 pre .tok-s { color: #067d17 } // Literal.String
 pre .tok-na { color: #067d17 } // Name.Attribute
 pre .tok-nb { color: #067d17 } // Name.Builtin
-pre .tok-nc { color: $code-color; } // Name.Class
+pre .tok-nc { color: $primary-text-color; } // Name.Class
 pre .tok-no { color: #871094 } // Name.Constant
 pre .tok-nd { color: #808000 } // Name.Decorator
 pre .tok-ni { color: #717171; } // Name.Entity
 pre .tok-ne { color: #CB3F38; } // Name.Exception
 pre .tok-nf { color: #00627a; } // Name.Function
 pre .tok-nl { color: #767600 } // Name.Label
-pre .tok-nn { color: $code-color; } // Name.Namespace
+pre .tok-nn { color: $primary-text-color; } // Name.Namespace
 pre .tok-nt { color: #871094; } // Name.Tag
 pre .tok-nv { color: #871094 } // Name.Variable
 pre .tok-ow { color: #AA22FF; } // Operator.Word
@@ -160,9 +160,9 @@ pre .tok-sc { color: #067d17 } // Literal.String.Char
 pre .tok-dl { color: #067d17 } // Literal.String.Delimiter
 pre .tok-sd { color: #067d17; font-style: italic } // Literal.String.Doc
 pre .tok-s2 { color: #067d17 } // Literal.String.Double
-pre .tok-se { color: #0033b3; font-weight: $font-weight-semibold } // Literal.String.Escape
+pre .tok-se { color: #0037a6 } // Literal.String.Escape
 pre .tok-sh { color: #067d17 } // Literal.String.Heredoc
-pre .tok-si { color: #A45A77; font-weight: $font-weight-semibold } // Literal.String.Interpol
+pre .tok-si { color: #A45A77 } // Literal.String.Interpol
 pre .tok-sx { color: #067d17 } // Literal.String.Other
 pre .tok-sr { color: #871094 } // Literal.String.Regex
 pre .tok-s1 { color: #067d17 } // Literal.String.Single

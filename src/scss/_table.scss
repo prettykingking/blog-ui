@@ -3,7 +3,7 @@
 //
 
 .table-wrapper {
-  margin: $spacer 0;
+  margin-top: $spacer;
   overflow-x: auto;
 }
 
@@ -20,14 +20,6 @@ th, td {
 
   > :first-child {
     margin-top: 0;
-  }
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-  code {
-    background-color: transparent;
   }
 }
 

@@ -4,11 +4,7 @@
 
 figure {
   display: block;
-  margin: $spacer 0;
-
-  & > :first-child {
-    margin-bottom: 0;
-  }
+  margin: $spacer 0 0;
 }
 
 figcaption, .image-desc {
