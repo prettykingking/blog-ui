@@ -1,5 +1,99 @@
 // Typography
 
+p {
+  margin-top: $spacer;
+  margin-bottom: 0;
+}
+
+hr {
+  height: 1px;
+  max-width: $spacer * 15;
+  margin-bottom: 0;
+  margin-inline: auto;
+  border-top: none;
+  opacity: 1;
+}
+
+hr, .line {
+  margin-top: $spacer;
+  background: url("/src/images/border.png") repeat-x;
+}
+
+.line {
+  height: 3px;
+}
+
+// Headings
+h5, h6 {
+  line-height: $line-height-base;
+}
+
+.quote {
+  margin-top: $spacer;
+  padding: $spacer;
+  border: 1px solid #d1d1d2;
+
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+.quote-footer {
+  font-size: $font-size-sm;
+
+  &::before {
+    content: "\2014\00A0"; // em dash, nbsp
+  }
+}
+
+.code-listing {
+  margin-top: $spacer;
+  padding: $spacer;
+  border-radius: $border-radius-lg;
+  background-color: rgba(25,25,28,0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.code-wrapper {
+  max-height: 600px;
+  overflow: auto;
+
+  td {
+    border: none;
+    padding: 0;
+
+    &.linenos {
+      padding-right: $spacer * 0.5;
+      pre {
+        color: #aeb3c2;
+      }
+    }
+  }
+}
+
+.copy-code {
+  display: inline-block;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.procedure {
+  margin-top: $spacer;
+  padding: $spacer;
+  border: 1px solid #d1d1d2;
+
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+.procedure-title {
+  font-size: $spacer * 1.25;
+  font-weight: $font-weight-semibold;
+}
+
 kbd {
   font-size: $font-size-sm;
   color: $body-color;
@@ -78,7 +172,7 @@ dd {
 }
 
 mark {
-  background-color: $light-highlight-background;
+  background-color: #ffffcc;
   padding: $spacer * 0.125 $spacer * 0.25;
 }
 

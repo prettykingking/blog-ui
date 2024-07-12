@@ -27,3 +27,129 @@
     background-color: $white;
   }
 }
+
+@mixin link-after($border-color) {
+  display: inline-block;
+  border-top: 3px solid $border-color;
+  border-radius: $border-radius $border-radius 0 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: $spacer;
+  right: $spacer;
+}
+
+.header {
+  contain: layout;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  .header-shadow {
+    position: relative;
+    box-shadow: $header-shadow;
+
+    &::before {
+      display: block;
+      background-color: $white;
+      height: 6px;
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .header-logo-row {
+    padding-top: $spacer * .5;
+    padding-bottom: $spacer * .5;
+    border-bottom: $primary-border;
+    background-color: $white;
+
+    position: relative;
+    z-index: 20;
+
+    &.no-tabs {
+      border-bottom: none;
+    }
+  }
+
+  .header-title {
+    color: $body-color;
+    font-size: $h4-font-size;
+    text-decoration: none;
+  }
+
+  @include media-breakpoint-down(md) {
+    .header-title {
+      font-size: $h5-font-size;
+    }
+  }
+
+  .header-tabs {
+    background-color: $white;
+    position: relative;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.nav-item {
+  margin-block: 0;
+
+  &::before {
+    content: none;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  color: $secondary-text-color;
+  position: relative;
+
+  &:hover {
+    color: $secondary-text-color;
+    text-decoration: none;
+
+    &::after {
+      @include link-after($secondary-text-color);
+    }
+  }
+
+  &.active {
+    color: $body-color;
+
+    &::after {
+      @include link-after($body-color);
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+footer {
+  width: 100%;
+  margin-top: $spacer;
+  padding-block: $spacer;
+  background-color: rgba(25,25,28,0.05);
+  color: $secondary-text-color;
+  font-size: $small-font-size;
+  text-align: center;
+
+  :first-child {
+    margin-top: 0;
+  }
+}
