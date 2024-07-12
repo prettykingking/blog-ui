@@ -5,6 +5,7 @@
   "type": "module",
   "main": "src/index.js",
   "module": "src/js/main.js",
+  "packageManager": "yarn@4.3.1",
   "scripts": {
     "start": "webpack-cli serve --config webpack.dev.js",
     "build": "webpack-cli --config webpack.prod.js",
