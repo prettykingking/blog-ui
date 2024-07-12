@@ -37,3 +37,8 @@ picture {
 .picture-image {
   max-width: 100%;
 }
+
+// Boostrap icons
+.bi::before {
+  color: $primary-text-color;
+}
