@@ -4,6 +4,15 @@ p {
   margin-bottom: 0;
 }
 
+hr {
+  height: 1px;
+  max-width: $spacer * 15;
+  margin-bottom: 0;
+  margin-inline: auto;
+  border-top: none;
+  opacity: 1;
+}
+
 hr, .line {
   margin-top: $spacer;
   background: url("/src/images/border.png") repeat-x;
@@ -11,14 +20,6 @@ hr, .line {
 
 .line {
   height: 3px;
-}
-
-hr {
-  height: 1px;
-  max-width: $spacer * 15;
-  margin-inline: auto;
-  border-top: none;
-  opacity: 1;
 }
 
 // Headings
