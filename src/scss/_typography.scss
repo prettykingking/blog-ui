@@ -5,7 +5,7 @@ kbd {
   color: $body-color;
   background-color: rgba(25,25,28,0.05);
   margin-inline: 1px;
-  padding: $spacer * 0.125 $spacer * 0.25;
+  padding: 1px $spacer * 0.25;
   border: 1px solid rgba(25,25,28,0.2);
   border-radius: $border-radius-sm;
 }

@@ -27,7 +27,7 @@
   "homepage": "https://github.com/prettykingking/blog-ui#readme",
   "dependencies": {
     "@popperjs/core": "^2.11.7",
-    "bootstrap": "^5.2.3",
+    "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3"
   },
   "devDependencies": {
@@ -37,7 +37,8 @@
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "mini-css-extract-plugin": "^2.7.6",
-    "postcss-loader": "^7.3.2",
+    "postcss": "^8.4.39",
+    "postcss-loader": "^8.1.1",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.1",
     "style-loader": "^3.3.3",
