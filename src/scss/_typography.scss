@@ -16,7 +16,7 @@ hr {
 
 hr, .line {
   margin-top: $spacer;
-  background-color: rgb(230, 218, 201);
+  background: url("/src/images/border.png") repeat-x;
 }
 
 .line {
@@ -31,7 +31,7 @@ h5, h6 {
 .quote {
   margin-top: $spacer;
   padding: $spacer;
-  border: 1px solid rgb(230, 218, 202);
+  border: 1px solid #d1d1d2;
 
   :first-child {
     margin-top: 0;
@@ -82,7 +82,7 @@ h5, h6 {
 .procedure {
   margin-top: $spacer;
   padding: $spacer;
-  border: $primary-border;
+  border: 1px solid #d1d1d2;
 
   :first-child {
     margin-top: 0;
@@ -159,8 +159,8 @@ dl {
 .deflist {
   margin-top: $spacer;
   padding: $spacer;
-  border: 1px solid rgb(230, 218, 202);
-  background-color: rgba(154, 128, 92, 0.06);
+  border: 1px solid #e8e8e8;
+  background-color: #f9f9f9;
 }
 
 dt {
