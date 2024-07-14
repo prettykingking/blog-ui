@@ -1,12 +1,6 @@
 // Notices
 
 aside {
-  --aside-note-color: #303f9f;
-  --aside-important-color: #ad9372;
-  --aside-caution-color: #b31412;
-  --aside-warning-color: #a50e0e;
-  --aside-note-bg: rgba(25,25,28,0.05);
-
   margin-top: $spacer;
   padding: $spacer;
   border-radius: $border-radius;
@@ -39,6 +33,7 @@ aside {
 aside.tip {
   background-color: rgba(25,25,28,0.05);
   &::before {
+    color: $primary-text-color;
     content: "\f193";
   }
 }

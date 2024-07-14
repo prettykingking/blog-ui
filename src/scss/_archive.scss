@@ -2,6 +2,26 @@
 // Base styles
 //
 
+main.archive {
+  width: 769px;
+  margin-inline: auto;
+  padding-bottom: $spacer * 1.5;
+  background-color: rgb(244, 236, 216);
+  box-shadow: 0 6px 12px 3px rgba(0, 0, 0, 0.2);
+}
+
+@include media-breakpoint-down(lg) {
+  main.archive {
+    width: 692px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  main.archive {
+    width: 100%;
+  }
+}
+
 .archive {
   margin-left: auto;
   margin-right: auto;
@@ -76,13 +96,12 @@
 
 .topic {
   font-size: $font-size-default * .8;
-  color: $topic-color;
-  background-color: $topic-bg;
+  color: $primary-text-color;
+  background-color: rgba(154, 128, 92, 0.06);
   padding: $spacer * 0.125 $spacer * 0.25;
   border-radius: $border-radius-sm;
 
   &.selected {
     color: $topic-color-selected;
-    background-color: $topic-bg-selected;
   }
 }

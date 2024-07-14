@@ -1,30 +1,22 @@
 // Main
 
-.main-container {
-  @include make-container($gutter: 0);
+.sepia {
+  background-color: rgb(224, 216, 200);
 }
 
-.main {
+main {
   margin-top: $spacer * 3;
 
-  &.main-archive {
+  &.archive {
     margin-top: $spacer * 6;
-  }
-
-  &.main-no-header {
-    margin-top: $spacer;
   }
 
   @include media-breakpoint-down(md) {
     margin-top: $spacer * 2.5;
 
-    &.main-archive {
+    &.archive {
       margin-top: $spacer * 5.5;
     }
-  }
-
-  main {
-    background-color: $white;
   }
 }
 
@@ -39,12 +31,25 @@
   right: $spacer;
 }
 
-.header {
+header {
   contain: layout;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
+
+  .logo-row {
+    padding-block: $spacer * .5;
+    border-bottom: $primary-border;
+    background-color: rgb(244, 236, 216);
+
+    position: relative;
+    z-index: 20;
+  }
+
+  .no-tabs {
+    border-bottom: none;
+  }
 
   .header-shadow {
     position: relative;
@@ -62,20 +67,6 @@
     }
   }
 
-  .header-logo-row {
-    padding-top: $spacer * .5;
-    padding-bottom: $spacer * .5;
-    border-bottom: $primary-border;
-    background-color: $white;
-
-    position: relative;
-    z-index: 20;
-
-    &.no-tabs {
-      border-bottom: none;
-    }
-  }
-
   .header-title {
     color: $body-color;
     font-size: $h4-font-size;
@@ -87,14 +78,14 @@
       font-size: $h5-font-size;
     }
   }
-
-  .header-tabs {
-    background-color: $white;
-    position: relative;
-  }
 }
 
-.nav {
+nav {
+  background-color: rgb(244, 236, 216);
+  position: relative;
+}
+
+.nav-row {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -142,9 +133,7 @@
 
 footer {
   width: 100%;
-  margin-top: $spacer;
   padding-block: $spacer;
-  background-color: rgba(25,25,28,0.05);
   color: $secondary-text-color;
   font-size: $small-font-size;
   text-align: center;

@@ -1,7 +1,23 @@
 // Article
 
-.article {
-  padding-top: $spacer * 1.5;
+main.article {
+  width: 769px;
+  margin-inline: auto;
+  padding-block: $spacer * 1.5;
+  background-color: rgb(244, 236, 216);
+  box-shadow: 0 6px 12px 3px rgba(0, 0, 0, 0.2);
+}
+
+@include media-breakpoint-down(lg) {
+  main.article {
+    width: 692px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  main.article {
+    width: 100%;
+  }
 }
 
 .article-header {
@@ -21,6 +37,7 @@
 
 .article-desc {
   margin-top: $spacer;
+  color: $secondary-text-color;
   font-size: $h4-font-size;
   line-height: $line-height-sm;
 }
@@ -42,7 +59,7 @@
 }
 
 .component-image {
-  width: 980px;
+  width: 769px;
 }
 
 @include media-breakpoint-down(lg) {
@@ -78,7 +95,7 @@
 ul.toc-list {
   margin-left: 0;
   padding-left: $spacer * .75;
-  border-left: 1px solid #d6d7d5;
+  border-left: $primary-border;
 
   ul {
     margin-left: 0;
@@ -95,14 +112,12 @@ ul.toc-list {
 
   a {
     font-size: $font-size-default * .8;
-    color: #655;
   }
 }
 
 .btn-toc {
   padding: 0;
   margin: 0 0.25rem;
-  color: #655;
   line-height: 1;
 
   &::before {

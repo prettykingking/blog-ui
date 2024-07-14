@@ -29,7 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@babel/core", "npm:7.22.9"],\
           ["@babel/preset-env", "virtual:91aecb9a9f3627daf24d0d04a344a3f27424c8cec474101cf713573aa3371a439d5c3331c6df32a42053068ad0072d8da99dc3d9eb9b159a73a233eca7e35fb2#npm:7.22.9"],\
-          ["@popperjs/core", "npm:2.11.7"],\
+          ["@popperjs/core", "npm:2.11.8"],\
           ["autoprefixer", "virtual:91aecb9a9f3627daf24d0d04a344a3f27424c8cec474101cf713573aa3371a439d5c3331c6df32a42053068ad0072d8da99dc3d9eb9b159a73a233eca7e35fb2#npm:10.4.14"],\
           ["babel-loader", "virtual:91aecb9a9f3627daf24d0d04a344a3f27424c8cec474101cf713573aa3371a439d5c3331c6df32a42053068ad0072d8da99dc3d9eb9b159a73a233eca7e35fb2#npm:9.1.3"],\
           ["bootstrap", "virtual:91aecb9a9f3627daf24d0d04a344a3f27424c8cec474101cf713573aa3371a439d5c3331c6df32a42053068ad0072d8da99dc3d9eb9b159a73a233eca7e35fb2#npm:5.3.3"],\
@@ -2552,10 +2552,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@popperjs/core", [\
-      ["npm:2.11.7", {\
-        "packageLocation": "../../../.yarn/berry/cache/@popperjs-core-npm-2.11.7-c1bac58243-10c0.zip/node_modules/@popperjs/core/",\
+      ["npm:2.11.8", {\
+        "packageLocation": "../../../.yarn/berry/cache/@popperjs-core-npm-2.11.8-f1692e11a0-10c0.zip/node_modules/@popperjs/core/",\
         "packageDependencies": [\
-          ["@popperjs/core", "npm:2.11.7"]\
+          ["@popperjs/core", "npm:2.11.8"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3443,7 +3443,7 @@ const RAW_RUNTIME_STATE =
           ["blog-ui", "workspace:."],\
           ["@babel/core", "npm:7.22.9"],\
           ["@babel/preset-env", "virtual:91aecb9a9f3627daf24d0d04a344a3f27424c8cec474101cf713573aa3371a439d5c3331c6df32a42053068ad0072d8da99dc3d9eb9b159a73a233eca7e35fb2#npm:7.22.9"],\
-          ["@popperjs/core", "npm:2.11.7"],\
+          ["@popperjs/core", "npm:2.11.8"],\
           ["autoprefixer", "virtual:91aecb9a9f3627daf24d0d04a344a3f27424c8cec474101cf713573aa3371a439d5c3331c6df32a42053068ad0072d8da99dc3d9eb9b159a73a233eca7e35fb2#npm:10.4.14"],\
           ["babel-loader", "virtual:91aecb9a9f3627daf24d0d04a344a3f27424c8cec474101cf713573aa3371a439d5c3331c6df32a42053068ad0072d8da99dc3d9eb9b159a73a233eca7e35fb2#npm:9.1.3"],\
           ["bootstrap", "virtual:91aecb9a9f3627daf24d0d04a344a3f27424c8cec474101cf713573aa3371a439d5c3331c6df32a42053068ad0072d8da99dc3d9eb9b159a73a233eca7e35fb2#npm:5.3.3"],\
@@ -3508,7 +3508,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-1b172dcc10/4/.yarn/berry/cache/bootstrap-npm-5.3.3-da08e2f0fe-10c0.zip/node_modules/bootstrap/",\
         "packageDependencies": [\
           ["bootstrap", "virtual:91aecb9a9f3627daf24d0d04a344a3f27424c8cec474101cf713573aa3371a439d5c3331c6df32a42053068ad0072d8da99dc3d9eb9b159a73a233eca7e35fb2#npm:5.3.3"],\
-          ["@popperjs/core", "npm:2.11.7"],\
+          ["@popperjs/core", "npm:2.11.8"],\
           ["@types/popperjs__core", null]\
         ],\
         "packagePeers": [\

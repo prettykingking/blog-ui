@@ -1,15 +1,12 @@
 // Custom variables
-$primary-text-color: #19191c;
-$secondary-text-color: #5f6368;
+$primary-text-color: rgb(79, 50, 28);
+$secondary-text-color: rgba(79, 50, 28, 0.72);
 
-$primary-border: 1px solid #d1d1d2;
+$primary-border: 1px solid rgb(230, 218, 202);
 
 // header
 $header-shadow: 0 1px 2px 0 rgba($black, .3), 0 2px 6px 2px rgba($black, .15);
 
 // topic
-$topic-color: #326;
-$topic-bg: #eef;
-$topic-color-selected: #166;
-$topic-bg-selected: #aff;
-$topic-hover-bg: #ddf;
+$topic-color: $primary-text-color;
+$topic-color-selected: rgb(209, 150, 0);
