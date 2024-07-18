@@ -202,6 +202,9 @@ pre .hll {
   padding-block: $spacer * 0.125;
   background-color: #ffffcc;
 }
+pre .tok-p {
+  color: #999;
+}
 // Comment
 pre .tok-c {
   color: #8c8c8c;
@@ -245,7 +248,7 @@ pre .tok-kr { color: #067d17; } // Keyword.Reserved
 pre .tok-kt { color: #0033b3; } // Keyword.Type
 pre .tok-m { color: #1750eb } // Literal.Number
 pre .tok-s { color: #067d17 } // Literal.String
-pre .tok-na { color: #067d17 } // Name.Attribute
+pre .tok-na { color: #0033b3 } // Name.Attribute
 pre .tok-nb { color: #067d17 } // Name.Builtin
 pre .tok-nc { color: $primary-text-color; } // Name.Class
 pre .tok-no { color: #871094 } // Name.Constant

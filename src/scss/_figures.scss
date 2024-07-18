@@ -30,12 +30,17 @@ figcaption, .image-desc {
   overflow: hidden;
 }
 
-picture {
-  display: inline-block;
-}
-
-.picture-image {
+img {
   max-width: 100%;
+
+  &.border-line {
+    border: 1px solid #d1d1d2;
+  }
+
+  &.border-rounded {
+    border-radius: 10px;
+    border: 1px solid #d1d1d2;
+  }
 }
 
 // Boostrap icons
