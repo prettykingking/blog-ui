@@ -1,10 +1,11 @@
 import Header from "./header.js";
+import Toc from "./toc.js";
+import Stem from "./stem.js";
 
 function main() {
-  const header = document.querySelector(".header-shadow");
-  if (header !== null) {
-    new Header(header, {});
-  }
+  new Header();
+  new Toc();
+  new Stem();
 }
 
 export default main;

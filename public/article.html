@@ -8,6 +8,9 @@
   <link rel="icon" type="image/png" href="/images/favicon-64x64.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/apple-touch-icon-180x180.png">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <script src="/main.js"></script>
 </head>
 <body>
 <div>
@@ -25,564 +28,580 @@
     </div>
   </header>
 
+  <div class="toc-panel">
+    <h6 class="heading">Table of Contents</h6>
+  </div>
+
     <main class="article">
-            <article>
-              <div class="component component-text">
-                <h1 class="article-title">Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder.</h1>
-                <div class="article-subtitle">
-                  <span class="date">June 13, 2023</span>
-                  <span class="topic">Update</span>
-                </div>
-                <div class="article-desc">
-                  From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.
-                </div>
+        <div class="component component-text">
+          <h1 class="article-title">Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder.</h1>
+          <div class="article-subtitle">
+            <span class="date">June 13, 2023</span>
+            <span class="topic">Update</span>
+          </div>
+          <div class="article-desc">
+            From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.
+          </div>
 
-                <div class="line"></div>
-              </div>
+          <div class="line"></div>
+        </div>
 
-              <div class="component component-text">
-                <h6 class="toc-heading">
-                  Table of Contents
-                </h6>
-                <ul class="toc-list">
-                  <li><a href="#">1. Python Primer</a></li>
-                  <li><a href="#">1. Python Primer</a></li>
-                  <li><a href="#">2. Object-Oriented Programming</a></li>
-                  <li><a href="#text-formatting">3. Algorithm Analysis</a></li>
-                  <li>
-                    <p><a href="#">11. Recursion</a></p>
-                    <ul>
-                      <li><a href="#">11.1. Binary Search Trees</a></li>
-                      <li><a href="#">11.2. Balanced Search Trees</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">12 Sorting and Selection</a></li>
-                </ul>
-                <button type="button" class="btn btn-toc expand-more"></button>
-                <button type="button" class="btn btn-toc expand-less"></button>
-                <button type="button" class="btn btn-link">Show more</button>
-              </div>
+        <div class="component component-text">
+          <h6 class="toc-heading">
+            Table of Contents
+          </h6>
+          <ul class="toc">
+            <li><a href="#">1. Python Primer</a></li>
+            <li><a href="#">2. Python Primer</a></li>
+            <li><a class="active" href="#">2. Object-Oriented Programming</a></li>
+            <li><a href="#text-formatting">3. Algorithm Analysis</a></li>
+            <li>
+              <a href="#">4. Recursion</a>
+              <ul>
+                <li class="l2"><a href="#">4.1. Binary Search Trees</a></li>
+                <li class="l2"><a href="#">4.2. Balanced Search Trees</a></li>
+              </ul>
+            </li>
+            <li><a href="#">5. Sorting and Selection</a></li>
+          </ul>
+          <button type="button" class="btn btn-toc expand-more"></button>
+          <button type="button" class="btn btn-toc expand-less"></button>
+          <button type="button" class="btn btn-link">Show more</button>
+        </div>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-              <div class="component component-text">
-                <h2 class="component-heading h2">The standard Lorem Ipsum passage, used since the 1500s</h2>
-              </div>
+        <div class="component component-text">
+          <h2 id="lorem-ipsum" class="component-heading h2">The standard Lorem Ipsum passage, used since the 1500s</h2>
+        </div>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-              <div class="component component-text">
-                <h3 class="component-heading h3">The standard Lorem Ipsum passage, used since the 1500s</h3>
-              </div>
+        <div class="component component-text">
+          <h3 id="chinese" class="component-heading h3">长标题长标题长标题长标题长标题长标题长标题</h3>
+        </div>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+        <div class="component component-text">
+          <h3 id="heading-abc" class="component-heading h3">Heading abc</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-              <div class="component component-text">
-                <h4 class="component-heading h4">The standard Lorem Ipsum passage, used since the 1500s</h4>
-              </div>
+        <div class="component component-text">
+          <h4 class="component-heading h4">The standard Lorem Ipsum passage, used since the 1500s</h4>
+        </div>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+        <div class="component component-text">
+          <h3 id="heading-xyz" class="component-heading h3">Heading xyz</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-              <div class="component component-text">
-                  <div class="code-listing">
-                    <div class="code-wrapper">
-                      <table>
-                        <tbody>
-                        <tr>
-                          <td class="code">
-                        <pre>error: 1954 Forbidden search
+        <div class="component component-text">
+            <div class="code-listing">
+              <div class="code-wrapper">
+                <table>
+                  <tbody>
+                  <tr>
+                    <td class="code">
+                  <pre>error: 1954 Forbidden search
 absolutely fatal: operation lost in the dodecahedron of doom
 
 Would you like to try again? y/n</pre>
-                          </td>
-                        </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
               </div>
+            </div>
+        </div>
 
-              <div class="component component-text">
-                <h5 class="component-heading h5">The standard Lorem Ipsum passage, used since the 1500s</h5>
+        <div class="component component-text">
+          <h5 class="component-heading h5">The standard Lorem Ipsum passage, used since the 1500s</h5>
+        </div>
+
+        <div class="component component-text">
+          <h3 id="heading-123" class="component-heading h3">Heading 123</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="component component-text">
+          <h6 class="component-heading h6">The standard Lorem Ipsum passage, used since the 1500s</h6>
+        </div>
+
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="component component-text">
+          <h2 id="figure" class="component-heading h2">Figure</h2>
+        </div>
+
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="component component-text">
+          <h2 id="stem" class="component-heading h2">STEM</h2>
+
+          <p>
+            Some codecs <span class="inline-stem">\(ax^2 + bx + c = 0\)</span> are backward-compatible with other codecs. These codecs work by adding metadata that are ignored when being interpreted as the compatible codec, but used by the newer codec. These codecs include Dolby Vision 8.4 (compatible with HLG) and Dolby Vision 8.1 (compatible with HDR10).
+          </p>
+
+          <hr/>
+
+          <div class="stem-listing">
+            <div class="stem">
+              When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+              $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+            </div>
+          </div>
+
+          <figure>
+            <div class="stem-listing">
+              <div class="stem">
+                $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
               </div>
+            </div>
+            <figcaption>Equation 1.1 Cosine</figcaption>
+          </figure>
+        </div>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
 
-              <div class="component component-text">
-                <h6 class="component-heading h6">The standard Lorem Ipsum passage, used since the 1500s</h6>
-              </div>
+          <hr/>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+          <p>
+            In particular, use <em>Nxx</em> (with a specific digit in place of N) to indicate anything in the <em>N00</em>-<em>N99</em> range.
+          </p>
 
-              <div class="component component-text">
-                <h2 class="component-heading h2">Figure</h2>
-              </div>
+          <div class="procedure">
+            <h3 class="procedure-title h3">Procedure title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+            <ol>
+              <li>C/C++</li>
+              <li>Java</li>
+              <li>
+                <p>Levels</p>
+              </li>
+              <li>Scheme</li>
+            </ol>
+          </div>
+        </div>
 
-              <div class="component component-text">
-                <h2 class="component-heading h2">STEM</h2>
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-                <p>
-                  Some codecs <span class="inline-stem">\(ax^2 + bx + c = 0\)</span> are backward-compatible with other codecs. These codecs work by adding metadata that are ignored when being interpreted as the compatible codec, but used by the newer codec. These codecs include Dolby Vision 8.4 (compatible with HLG) and Dolby Vision 8.1 (compatible with HDR10).
-                </p>
+        <div class="component component-image">
+          <div class="image-sheet">
+            <div class="image-box">
+              <img src="/images/English-Handwriting.jpeg" alt="" class="border-rounded" />
+            </div>
+          </div>
+        </div>
+        <div class="component component-text">
+          <div class="image-desc">
+            <strong>Figure 1.1</strong> English Handwriting. A <a href="http://example.com">link</a> in caption for the above image.
+          </div>
+        </div>
 
-                <hr/>
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-                <div class="stem-listing">
-                  <div class="stem">
-                    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-                    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-                  </div>
-                </div>
+        <div class="component component-image">
+          <div class="image-sheet">
+            <div class="image-box">
+              <img src="/images/markdown.png" alt="" class="border-line" width="478" height="200" />
+            </div>
+          </div>
+        </div>
+        <div class="component component-text">
+          <div class="image-desc">
+            <strong>Figure 1.2</strong> Images in Markdown.
+          </div>
+        </div>
 
-                <figure>
-                  <div class="stem-listing">
-                    <div class="stem">
-                      $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-                    </div>
-                  </div>
-                  <figcaption>Equation 1.1 Cosine</figcaption>
-                </figure>
-              </div>
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+        <div class="component component-text">
+          <h2 id="text-formatting" class="component-heading h2">3. Text Formatting</h2>
 
-                <hr/>
+          <p><del>This line of text is meant to be treated as deleted text.</del></p>
+          <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+          <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+          <p><u>This line of text will render as underlined.</u></p>
+          <p><small>This line of text is meant to be treated as fine print.</small> Normal</p>
+          <p><strong>This line rendered as bold text.</strong></p>
+          <p><em>This line rendered as italicized text.</em></p>
+          <p>Sub text<sub>[<a href="#">1</a>]</sub>. Sup text<sup>[<a href="#">2</a>]</sup></p>
+          <p>
+            Readers will not be able to find anything in collapsed content via the browser search with
+            <kbd><i class="bi bi-command"></i>CMD</kbd> + <kbd>F</kbd>
+            on the web page, so do not collapse important information.
+          </p>
+          <p>
+            You could insert icon in text. Select <strong>MyApp</strong> | <strong>Preferences</strong>, and then select the <strong>Language</strong> preference pane.
+          </p>
+        </div>
 
-                <p>
-                  In particular, use <em>Nxx</em> (with a specific digit in place of N) to indicate anything in the <em>N00</em>-<em>N99</em> range.
-                </p>
+        <div class="component component-text">
+          <h2 id="notice" class="component-heading h2">Notices</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
 
-                <div class="procedure">
-                  <h3 class="procedure-title h3">Procedure title</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
+          <aside class="note">
+            <div class="prompt-content">
+              <p>
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+          </aside>
 
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <aside class="tip">
+            <div class="prompt-content">
+              <p>
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </aside>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="component component-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <aside class="important">
+            <div class="prompt-content">
+              <p>
+                The <code>EXT-X-MEDIA-SEQUENCE</code> tag <a href="#">value</a> must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
+              </p>
+              <p>
+                The <code>EXT-X-MEDIA-SEQUENCE</code> tag <a href="#">value</a> must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
+              </p>
+            </div>
+          </aside>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <aside class="caution">
+            <div class="prompt-content">
+              <p>
+                The EXT-X-MEDIA-SEQUENCE tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
+              </p>
+            </div>
+          </aside>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <aside class="warning">
+            <div class="prompt-content">
+              <p>
+                The EXT-X-MEDIA-SEQUENCE tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
+              </p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="component component-text">
+          <h2 id="tables" class="component-heading h2">Tables</h2>
+            <div class="table-wrapper">
+              <table class="stretched">
+                <caption><strong>Table 3.3</strong> List of users</caption>
+                <thead>
+                <tr>
+                  <th>Level</th>
+                  <th>Typical time in level for ICs (years) years years</th>
+                  <th>Typical time in level for managers (years)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>L1</td>
+                  <td>1.5-2</td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>L2</td>
+                  <td>2-3</td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>L3</td>
+                  <td>2-4</td>
+                  <td>0-2*</td>
+                </tr>
+                <tr>
+                  <td>L4</td>
+                  <td>
+                    <p>4+</p>4+
+                    <p>We expect all engineers to grow to have L4-level impact or greater over time. L4 will be a career level for many engineers.</p>
+                  </td>
+                  <td>
+                    <p>4+</p>
+                    <p>We expect all engineering managers to grow to have L4-level impact or greater over time. L4 will be a career level for many engineers.</p></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>*Manager time in L3 is shorter than IC because ICs transferring to management are expected to have already grown through much of the L3 level</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                <tr>
+                  <th scope="col">
+                    <p>File Extension</p>
+                  </th>
+                  <th scope="col">
+                    <p>MIME Type</p>
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <code>.m3u8</code>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+                      <code>vnd<wbr>.apple<wbr>.mpeg<wbr>URL</code>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <code>.ts</code>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+                      <code>video/MP2T</code>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <code>.mp4</code>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+                      <code>video/mp4</code>
+                    </p>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+
+        <div class="component component-text">
+          <h2 id="blockquote" class="component-heading h2">Blockquote</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <blockquote class="quote">
+            <p>本是后山人<br>
+            偶做前堂客<br>
+            醉舞经阁半卷书<br>
+            坐井谈天阔<br>
+            大志戏功名<br>
+            海斗量福祸<br>
+            论到囊中羞涩时<br>
+            怒指乾坤错</p>
+            <p class="quote-footer">豆豆 <cite>《自嘲》</cite></p>
+          </blockquote>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <blockquote class="quote">
+            <p>A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
+            <p>A well-known quote, contained in a blockquote element.</p>
+            <p>Author, Date</p>
+            <p class="quote-footer">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </p>
+          </blockquote>
+
+          <hr/>
+        </div>
+
+        <div class="component component-text">
+          <h2 id="check-list" class="component-heading h2">Check List</h2>
+
+          <ul class="checklist">
+            <li>
+              <span class="circle checked"></span>
+              <p>中文 Hide nav on scroll Hide nav on scroll Hide nav on scroll Hide nav on scroll Hide nav on scroll</p>
+              <p>Hide nav on scroll</p>
+            </li>
+            <li>
+              <span class="circle"></span>
+              <p>Pre-rendered STEM Hide nav on scroll Hide nav on scrollHide nav on scrollHide nav on scroll</p>
+            </li>
+            <li>
+              <span class="circle"></span>
+              <p>Scheme</p>
+            </li>
+            <li>
+              <span class="circle checked"></span>
+              <p>中文已完成事项</p>
+            </li>
+            <li>
+              <span class="circle checked"></span>
+              <p>中文待办事项</p>
+            </li>
+          </ul>
+
+          <h2 id="lists" class="component-heading h2">Lists</h2>
+
+          <ul>
+            <li>C/C++</li>
+            <li>Java</li>
+            <li>
+              <p>Levels</p>
+              <p>Levels</p>
+              <ul>
+                <li>L1</li>
+                <li>L2</li>
+                <li>L3</li>
+                <li>
+                  <p>L4</p>
+                  <ul>
+                    <li>L1</li>
+                    <li>L2</li>
+                    <li>L3</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Scheme</li>
+          </ul>
+
+          <hr/>
+
+          <ol>
+            <li>C/C++</li>
+            <li>Java</li>
+            <li>
+              <p>Levels</p>
+              <ol>
+                <li>L1</li>
+                <li>L2</li>
+                <li>L3</li>
+                <li>
+                  <p>L4</p>
                   <ol>
-                    <li>C/C++</li>
-                    <li>Java</li>
-                    <li>
-                      <p>Levels</p>
-                    </li>
-                    <li>Scheme</li>
+                    <li>L1</li>
+                    <li>L2</li>
+                    <li>L3</li>
+                    <li>L4</li>
+                    <li>L5</li>
                   </ol>
-                </div>
-              </div>
+                </li>
+              </ol>
+            </li>
+            <li>Scheme</li>
+          </ol>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+          <h3 id="desc-list" class="component-heading h3">Description list</h3>
+          <dl>
+            <div class="deflist">
+              <dt>Term A</dt>
+              <dd>
+                <p>Definition for the term.</p>
+              </dd>
+            </div>
 
-              <div class="component component-image">
-                <div class="image-sheet">
-                  <div class="image-box">
-                    <img src="/images/English-Handwriting.jpeg" alt="" class="border-rounded" />
-                  </div>
-                </div>
-              </div>
-              <div class="component component-text">
-                <div class="image-desc">
-                  <strong>Figure 1.1</strong> English Handwriting. A <a href="http://example.com">link</a> in caption for the above image.
-                </div>
-              </div>
+            <div class="deflist">
+              <dt>描述标题</dt>
+              <dd>
+                <p>Definition for the term.</p>
+                <p>And some more placeholder definition text.</p>
+              </dd>
+            </div>
+          </dl>
 
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-
-              <div class="component component-image">
-                <div class="image-sheet">
-                  <div class="image-box">
-                    <img src="/images/markdown.png" alt="" class="border-line" width="478" height="200" />
-                  </div>
-                </div>
-              </div>
-              <div class="component component-text">
-                <div class="image-desc">
-                  <strong>Figure 1.2</strong> Images in Markdown.
-                </div>
-              </div>
-
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-
-              <div class="component component-text">
-                <h2 id="text-formatting" class="component-heading h2">3. Text Formatting</h2>
-
-                <p><del>This line of text is meant to be treated as deleted text.</del></p>
-                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-                <p><u>This line of text will render as underlined.</u></p>
-                <p><small>This line of text is meant to be treated as fine print.</small> Normal</p>
-                <p><strong>This line rendered as bold text.</strong></p>
-                <p><em>This line rendered as italicized text.</em></p>
-                <p>Sub text<sub>[<a href="#">1</a>]</sub>. Sup text<sup>[<a href="#">2</a>]</sup></p>
-                <p>
-                  Readers will not be able to find anything in collapsed content via the browser search with
-                  <kbd><i class="bi bi-command"></i>CMD</kbd> + <kbd>F</kbd>
-                  on the web page, so do not collapse important information.
-                </p>
-                <p>
-                  You could insert icon in text. Select <strong>MyApp</strong> | <strong>Preferences</strong>, and then select the <strong>Language</strong> preference pane.
-                </p>
-              </div>
-
-              <div class="component component-text">
-                <h2 class="component-heading h2">Notices</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <aside class="note">
-                  <div class="prompt-content">
-                    <p>
-                      Lorem ipsum dolor sit amet
-                    </p>
-                  </div>
-                </aside>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <aside class="tip">
-                  <div class="prompt-content">
-                    <p>
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                </aside>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-
-              <div class="component component-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <aside class="important">
-                  <div class="prompt-content">
-                    <p>
-                      The <code>EXT-X-MEDIA-SEQUENCE</code> tag <a href="#">value</a> must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
-                    </p>
-                    <p>
-                      The <code>EXT-X-MEDIA-SEQUENCE</code> tag <a href="#">value</a> must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
-                    </p>
-                  </div>
-                </aside>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <aside class="caution">
-                  <div class="prompt-content">
-                    <p>
-                      The EXT-X-MEDIA-SEQUENCE tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
-                    </p>
-                  </div>
-                </aside>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <aside class="warning">
-                  <div class="prompt-content">
-                    <p>
-                      The EXT-X-MEDIA-SEQUENCE tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
-                    </p>
-                  </div>
-                </aside>
-              </div>
-
-              <div class="component component-text">
-                <h2 class="component-heading h2">Tables</h2>
-                  <div class="table-wrapper">
-                    <table class="stretched">
-                      <caption><strong>Table 3.3</strong> List of users</caption>
-                      <thead>
-                      <tr>
-                        <th>Level</th>
-                        <th>Typical time in level for ICs (years) years years</th>
-                        <th>Typical time in level for managers (years)</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                        <td>L1</td>
-                        <td>1.5-2</td>
-                        <td>n/a</td>
-                      </tr>
-                      <tr>
-                        <td>L2</td>
-                        <td>2-3</td>
-                        <td>n/a</td>
-                      </tr>
-                      <tr>
-                        <td>L3</td>
-                        <td>2-4</td>
-                        <td>0-2*</td>
-                      </tr>
-                      <tr>
-                        <td>L4</td>
-                        <td>
-                          <p>4+</p>4+
-                          <p>We expect all engineers to grow to have L4-level impact or greater over time. L4 will be a career level for many engineers.</p>
-                        </td>
-                        <td>
-                          <p>4+</p>
-                          <p>We expect all engineering managers to grow to have L4-level impact or greater over time. L4 will be a career level for many engineers.</p></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td>*Manager time in L3 is shorter than IC because ICs transferring to management are expected to have already grown through much of the L3 level</td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <div class="table-wrapper">
-                    <table>
-                      <thead>
-                      <tr>
-                        <th scope="col">
-                          <p>File Extension</p>
-                        </th>
-                        <th scope="col">
-                          <p>MIME Type</p>
-                        </th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                        <td>
-                          <p>
-                            <code>.m3u8</code>
-                          </p>
-                        </td>
-                        <td>
-                          <p>
-                            <code>vnd<wbr>.apple<wbr>.mpeg<wbr>URL</code>
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p>
-                            <code>.ts</code>
-                          </p>
-                        </td>
-                        <td>
-                          <p>
-                            <code>video/MP2T</code>
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p>
-                            <code>.mp4</code>
-                          </p>
-                        </td>
-                        <td>
-                          <p>
-                            <code>video/mp4</code>
-                          </p>
-                        </td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </div>
-              </div>
-
-              <div class="component component-text">
-                <h2 class="component-heading h2">Blockquote</h2>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <blockquote class="quote">
-                  <p>本是后山人<br>
-                  偶做前堂客<br>
-                  醉舞经阁半卷书<br>
-                  坐井谈天阔<br>
-                  大志戏功名<br>
-                  海斗量福祸<br>
-                  论到囊中羞涩时<br>
-                  怒指乾坤错</p>
-                  <p class="quote-footer">豆豆 <cite>《自嘲》</cite></p>
-                </blockquote>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <blockquote class="quote">
-                  <p>A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
-                  <p>A well-known quote, contained in a blockquote element.</p>
-                  <p>Author, Date</p>
-                  <p class="quote-footer">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                  </p>
-                </blockquote>
-
-                <hr/>
-              </div>
-
-              <div class="component component-text">
-                <h2 class="component-heading h2">Check List</h2>
-
-                <ul>
-                  <li>
-                    <p>Hide nav on scroll</p>
-                    <p>Hide nav on scroll</p>
-                  </li>
-                  <li>
-                    <p>Pre-rendered STEM</p>
-                  </li>
-                  <li>
-                    <p>Scheme</p>
-                  </li>
-                </ul>
-
-                <h2 class="component-heading h2">Lists</h2>
-
-                <ul>
-                  <li>C/C++</li>
-                  <li>Java</li>
-                  <li>
-                    <p>Levels</p>
-                    <p>Levels</p>
-                    <ul>
-                      <li>L1</li>
-                      <li>L2</li>
-                      <li>L3</li>
-                      <li>
-                        <p>L4</p>
-                        <ul>
-                          <li>L1</li>
-                          <li>L2</li>
-                          <li>L3</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>Scheme</li>
-                </ul>
-
-                <hr/>
-
-                <ol>
-                  <li>C/C++</li>
-                  <li>Java</li>
-                  <li>
-                    <p>Levels</p>
-                    <ol>
-                      <li>L1</li>
-                      <li>L2</li>
-                      <li>L3</li>
-                      <li>
-                        <p>L4</p>
-                        <ol>
-                          <li>L1</li>
-                          <li>L2</li>
-                          <li>L3</li>
-                          <li>L4</li>
-                          <li>L5</li>
-                        </ol>
-                      </li>
-                    </ol>
-                  </li>
-                  <li>Scheme</li>
-                </ol>
-
-                <h3 class="component-heading h3">Description list</h3>
-                <dl>
-                  <div class="deflist">
-                    <dt>Term A</dt>
-                    <dd>
-                      <p>Definition for the term.</p>
-                    </dd>
-                  </div>
-
-                  <div class="deflist">
-                    <dt>描述标题</dt>
-                    <dd>
-                      <p>Definition for the term.</p>
-                      <p>And some more placeholder definition text.</p>
-                    </dd>
-                  </div>
-                </dl>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
     </main>
 
   <footer>
@@ -592,22 +611,5 @@ Would you like to try again? y/n</pre>
   </footer>
 </div>
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js">
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js">
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function (e) {
-    const spans = document.querySelectorAll("span.inline-stem");
-    for (const s of spans) {
-      renderMathInElement(s);
-    }
-    const blocks = document.querySelectorAll("div.stem");
-    for (const b of blocks) {
-      renderMathInElement(b);
-    }
-  });
-</script>
-<script async src="/main.js"></script>
 </body>
 </html>

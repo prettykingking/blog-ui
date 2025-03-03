@@ -2,43 +2,36 @@
  * Hide header on scroll
  */
 
-import BaseComponent from "bootstrap/js/src/base-component.js";
 import EventHandler from "bootstrap/js/src/dom/event-handler.js";
 
-const Default = {
-};
-const DefaultType = {
-};
-
-class Header extends BaseComponent {
-  constructor(element, config) {
-    super(element, config);
-
+class Header {
+  constructor() {
     this._scrollPosition = 0;
     this._lastKnownScrollPosition = 0;
-    this._scrollTicking = false;
+    this._scrollTicking = false; // wait for previous transform animation
 
     this._scrolledOffset = 0;
+    this._wrapper = null;
+    this._wrapperHeight = 0;
+    this._maxOffset = 0;
+
+
+    EventHandler.on(document, "DOMContentLoaded", () => {
+      this.setup();
+    });
+  }
+
+  setup() {
+    const headerElm = document.querySelector(".header-shadow");
+    if (headerElm === null) {
+      return;
+    }
+
+    this._element = headerElm;
     this._wrapper = this._element.parentElement;
     this._wrapperHeight = this._wrapper.clientHeight;
     this._maxOffset = this._element.clientHeight;
 
-    this._setListeners();
-  }
-
-  static get Default() {
-    return Default;
-  }
-
-  static get DefaultType() {
-    return DefaultType;
-  }
-
-  static get NAME() {
-    return "header";
-  }
-
-  _setListeners() {
     EventHandler.on(window, "scroll", () => {
       this._scrollPosition = window.scrollY;
 

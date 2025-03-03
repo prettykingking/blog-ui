@@ -6,6 +6,7 @@
   <title>Article</title>
   <link rel="icon" type="image/png" href="/images/favicon-64x64.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/apple-touch-icon-180x180.png">
+  <script src="/main.js"></script>
 </head>
 <body>
 <div>
@@ -17,8 +18,11 @@
     </div>
   </header>
 
+  <div class="toc-panel">
+    <h6 class="heading">Table of Contents</h6>
+  </div>
+
     <main class="article">
-            <article class="article">
               <div class="component component-text">
                 <h1 class="article-title">Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder.</h1>
                 <div class="article-subtitle">
@@ -34,7 +38,7 @@
 
 
               <div class="component component-text">
-                <h2 class="component-heading h2">Code</h2>
+                <h2 id="code" class="component-heading h2">Code</h2>
                 <p>
                   It is recommended to use limit <code>10-100</code><code>10-100</code> for channels and <code>1000-10000</code> otherwise.
                 </p>
@@ -228,8 +232,6 @@
                   </li>
                 </ul>
               </div>
-            </article>
-
     </main>
 
   <footer>
@@ -239,6 +241,5 @@
   </footer>
 </div>
 
-<script src="/main.js"></script>
 </body>
 </html>

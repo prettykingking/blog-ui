@@ -6,13 +6,13 @@ main.article {
   padding-block: $spacer * 1.5;
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(lg) { // if <= 992
   main.article {
     width: 692px;
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(md) { // if <= 768
   main.article {
     width: 100%;
     margin-top: $spacer * 2.5;
@@ -42,7 +42,6 @@ main.no-header {
 
 @include media-breakpoint-down(lg) {
   .article-desc {
-    margin-top: $spacer;
     font-size: $h5-font-size;
   }
 }
@@ -89,30 +88,6 @@ main.no-header {
   margin-bottom: 0;
 }
 
-ul.toc-list {
-  margin-left: 0;
-  padding-left: $spacer * .75;
-  border-left: 1px solid #d6d7d5;
-
-  ul {
-    margin-left: 0;
-    padding-left: $spacer * .75;
-  }
-
-  li, p {
-    margin-block: 0;
-  }
-
-  li::before {
-    content: none;
-  }
-
-  a {
-    font-size: $font-size-default * .8;
-    color: #665555;
-  }
-}
-
 .btn-toc {
   padding: 0;
   margin: 0 0.25rem;
@@ -140,4 +115,103 @@ ul.toc-list {
 
 .expand-less::before {
   content: "\f27c";
+}
+
+.toc-panel {
+  width: 210px;
+  background-color: $white;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+ul.toc {
+  margin-left: 0;
+
+  ul {
+    margin-left: 0;
+  }
+  li {
+    margin-top: 0;
+    padding-left: $spacer * .75;
+
+    &::before {
+      width: 1px;
+      content: "";
+      background-color: #d1d1d2;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+    &.l2::before {
+      left: $spacer * -0.75;
+    }
+  }
+
+  a {
+    font-size: $font-size-default * .8;
+    color: #5f6368;
+
+    &:hover {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+  }
+}
+
+ul.toc-sidebar {
+  margin-left: 0;
+  overflow: auto;
+
+  ul {
+    margin-left: 0;
+  }
+  li {
+    margin-top: 0;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  a {
+    display: block;
+    padding-block: $spacer * 0.25;
+    padding-left: $spacer * .75;
+    font-size: $font-size-default * .8;
+    color: #5f6368;
+    position: relative;
+
+    &.active {
+      color: $primary-text-color;
+    }
+    &:hover {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    &.l2 {
+      padding-left: $spacer * 1.5;
+    }
+
+    &::before {
+      width: 1px;
+      content: "";
+      background-color: #d1d1d2;
+      position: absolute;
+      left: 1px;
+      top: 0;
+      bottom: 0;
+    }
+    &.active::before {
+      width: 3px;
+      background-color: #1a73e8;
+      left: 0;
+    }
+  }
 }
