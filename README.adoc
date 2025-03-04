@@ -14,8 +14,8 @@ fine for any kind of writing in terms of comprehensive formatting.
 
 * [x] Responsive page layout
 * [x] Auto-hide header on scroll
-* [ ] Page navigation sidebar
-* [ ] Copy code
+* [x] TOC(Table of contents) sidebar
+* [x] Code block copy
 
 
 == Development
