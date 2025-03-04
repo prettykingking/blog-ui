@@ -1,0 +1,43 @@
+// Toast alerts
+
+.alert-container {
+  position: fixed;
+  right: $spacer;
+  bottom: $spacer*0.5;
+}
+
+.toast {
+  display: flex;
+  align-items: baseline;
+  max-width: 210px;
+  margin: 0 $spacer*0.5 $spacer*0.5;
+  padding-inline: $spacer*0.5;
+  border-radius: $border-radius-sm;
+  background-color: rgb(57, 59, 64);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.31), 0 1px 2px rgba(0, 0, 0, 0.37);
+
+  &:not(.show) {
+    display: none;
+  }
+
+  .icon {
+    margin-right: $spacer*0.5;
+  }
+  .caption {
+    flex: 1;
+    margin-block: $spacer*0.5;
+    margin-right: $spacer;
+    color: $white;
+  }
+
+  .bi::before {
+    vertical-align: $spacer * -0.5;
+    font-size: $font-size-default * 1.5;
+  }
+  .bi-x::before {
+    color: rgb(157, 160, 168);
+  }
+  .bi-check::before {
+    color: rgb(115, 189, 121);
+  }
+}
