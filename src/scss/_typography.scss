@@ -73,7 +73,7 @@ h5, h6 {
 }
 
 .code-copy {
-  display: none;
+  display: inline-block;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
@@ -85,7 +85,7 @@ h5, h6 {
   .btn {
     background-color: $white;
     border-radius: $border-radius-sm;
-    padding: $spacer*0.25 $spacer*0.5;
+    padding: $spacer*0.25 $spacer*0.25 $spacer*0.125;
 
     .bi-copy::before {
       color: rgb(108,112,126);
@@ -161,7 +161,7 @@ ul.checklist {
     border-radius: 50%;
     position: absolute;
     left: $spacer * -1.5;
-    top: 5px;
+    top: 6px;
 
     &::before {
       content: '';
