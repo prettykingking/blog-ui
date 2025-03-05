@@ -27,7 +27,7 @@ const EVENT_HIDDEN = `hidden${EVENT_KEY}`
 const EVENT_SHOW = `show${EVENT_KEY}`
 const EVENT_SHOWN = `shown${EVENT_KEY}`
 
-const CLASS_NAME_SHOW = 'show'
+const CLASS_NAME_HIDE = 'hide'
 const CLASS_NAME_SHOWING = 'showing'
 const CLASS_NAME_CLOSING = 'closing'
 
@@ -88,7 +88,8 @@ class Toast extends BaseComponent {
     }
 
     reflow(this._element)
-    this._element.classList.add(CLASS_NAME_SHOW, CLASS_NAME_SHOWING)
+    this._element.classList.remove(CLASS_NAME_HIDE);
+    this._element.classList.add(CLASS_NAME_SHOWING)
 
     this._queueCallback(complete, this._element, this._config.animation)
   }
@@ -105,7 +106,8 @@ class Toast extends BaseComponent {
     }
 
     const complete = () => {
-      this._element.classList.remove(CLASS_NAME_CLOSING, CLASS_NAME_SHOW)
+      this._element.classList.add(CLASS_NAME_HIDE)
+      this._element.classList.remove(CLASS_NAME_CLOSING)
       EventHandler.trigger(this._element, EVENT_HIDDEN)
     }
 
@@ -117,14 +119,14 @@ class Toast extends BaseComponent {
     this._clearTimeout()
 
     if (this.isShown()) {
-      this._element.classList.remove(CLASS_NAME_SHOW)
+      this._element.classList.add(CLASS_NAME_HIDE)
     }
 
     super.dispose()
   }
 
   isShown() {
-    return this._element.classList.contains(CLASS_NAME_SHOW)
+    return !this._element.classList.contains(CLASS_NAME_HIDE)
   }
 
   // Private

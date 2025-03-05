@@ -69,7 +69,7 @@ class Copy {
 
     const alertEl = document.querySelector("#code-copy-alert");
     this.alert = new Toast(alertEl, {
-      delay: 2000
+      delay: 3000
     });
     this.alert.show();
   }

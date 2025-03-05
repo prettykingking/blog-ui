@@ -109,23 +109,30 @@ class Toc {
 
   transformVisibility() {
     if (document.documentElement.clientWidth < BREAKPOINT_XL) {
-      if (!this.panel.classList.contains("hidden")) {
-        this.panel.classList.add("hidden");
-      }
+      this.hide();
       return;
     }
 
     const delta = document.documentElement.clientHeight - RESERVED_SPACE;
     if (delta < this.titleHeight) {
-      if (!this.panel.classList.contains("hidden")) {
-        this.panel.classList.add("hidden");
-      }
+      this.hide();
     } else {
-      if (this.panel.classList.contains("hidden")) {
-        this.panel.classList.remove("hidden");
-      }
+      this.show();
       this.toc.style.maxHeight = `${delta}px`;
     }
+  }
+
+  show() {
+    if (this.panel.classList.contains("hide")) {
+      this.panel.classList.remove("hide");
+    }
+  }
+
+  hide() {
+    if (this.panel.classList.contains("hide")) {
+      return;
+    }
+    this.panel.classList.add("hide");
   }
 
   spyScroll() {
