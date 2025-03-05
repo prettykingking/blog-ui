@@ -78,10 +78,6 @@ h5, h6 {
   top: 0.5rem;
   right: 0.5rem;
 
-  &.show {
-    display: inline-block;
-  }
-
   .btn {
     background-color: $white;
     border-radius: $border-radius-sm;
@@ -182,8 +178,6 @@ ul.checklist {
     }
   }
 }
-
-
 
 ol {
   list-style: decimal outside;

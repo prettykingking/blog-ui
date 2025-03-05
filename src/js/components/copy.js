@@ -30,10 +30,10 @@ class Copy {
     }
 
     EventHandler.on(listing, "mouseover", () => {
-      copy.classList.add("show");
+      copy.classList.remove("hide");
     });
     EventHandler.on(listing, "mouseout", () => {
-      copy.classList.remove("show");
+      copy.classList.add("hide");
     });
 
     const btn = copy.querySelector(".btn");
