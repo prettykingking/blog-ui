@@ -121,7 +121,7 @@ ul.toc {
   }
 
   a {
-    font-size: $font-size-default * .8;
+    font-size: $font-size-base * 0.75;
     color: #5f6368;
 
     &:hover {
@@ -150,7 +150,7 @@ ul.toc-sidebar {
     display: block;
     padding-block: $spacer * 0.25;
     padding-left: $spacer * .75;
-    font-size: $font-size-default * .8;
+    font-size: $font-size-base * 0.75;
     color: #5f6368;
     position: relative;
 

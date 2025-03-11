@@ -88,12 +88,12 @@ main.archive {
 .archive-subtitle {
   .date {
     color: $secondary-text-color;
-    font-size: $font-size-default * .8;
+    font-size: $font-size-sm;
   }
 }
 
 .topic {
-  font-size: $font-size-default * .8;
+  font-size: $font-size-sm;
   color: $topic-color;
   background-color: $topic-bg;
   padding: $spacer * 0.125 $spacer * 0.25;

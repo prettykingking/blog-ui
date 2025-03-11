@@ -28,7 +28,7 @@
 
   .bi::before {
     vertical-align: $spacer * -0.5;
-    font-size: $font-size-default * 1.5;
+    font-size: $font-size-base * 1.5;
   }
   .bi-x::before {
     color: rgb(157, 160, 168);

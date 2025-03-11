@@ -11,20 +11,26 @@ table {
   &.stretched {
     width: 100%;
   }
-}
 
-th, td {
-  border: $primary-border;
-  padding: $table-cell-padding-y $table-cell-padding-x;
-  vertical-align: top;
+  font-size: $font-size-sm;
 
-  > :first-child {
-    margin-top: 0;
+  tbody tr {
+    border-bottom: 1px solid #e4e4e4;
   }
-}
 
-th {
-  background-color: #f4f4f4;
+  th {
+    color: $white;
+    background-color: #97a6b2;
+  }
+
+  th, td {
+    padding: $spacer*0.5 $spacer*0.5;
+    vertical-align: top;
+
+    > :first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 caption {

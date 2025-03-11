@@ -59,12 +59,15 @@ h5, h6 {
   max-height: 600px;
   overflow: auto;
 
-  td {
+  tbody tr {
     border: none;
+  }
+
+  td {
     padding: 0;
 
     &.linenos {
-      padding-right: $spacer * 0.5;
+      padding-right: $spacer * 0.75;
       pre {
         color: rgb(108, 112, 126);
       }
@@ -140,7 +143,7 @@ ul {
       content: "✼"; // •
       position: absolute;
       left: $spacer * -1.3;
-      top: $spacer * .2;
+      top: $spacer * .125;
       font-size: $font-size-sm;
     }
   }
@@ -157,7 +160,7 @@ ul.checklist {
     border-radius: 50%;
     position: absolute;
     left: $spacer * -1.5;
-    top: 6px;
+    top: $spacer * 0.25;
 
     &::before {
       content: '';

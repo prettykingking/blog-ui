@@ -4,7 +4,11 @@
 @import "bootstrap/scss/functions";
 
 // Include any default variable overrides here
-$font-family-sans-serif: "Sorts Mill Goudy", "PingFang SC", "Microsoft YaHei", serif;
+// Apple English "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
+// Apple Chinese "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
+// Microsoft English "Segoe UI","Segoe UI Web","wf_segoe-ui_normal","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif
+// Microsoft Chinese "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif
+$font-family-sans-serif: "Sorts Mill Goudy", "SF Pro SC", "PingFang SC", "Segoe UI", "Microsoft YaHei UI", sans-serif;
 $font-family-monospace: "JetBrains Mono", monospace;
 
 $body-color: #19191c;
@@ -14,16 +18,15 @@ $link-hover-color: #945424;
 $link-hover-decoration: underline;
 $link-decoration: none;
 
-$font-size-default: 1rem;
-$font-size-base: 1.1rem;
-$font-size-sm: 0.9rem;
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
 
 $h1-font-size: 2rem;
 $h2-font-size: 1.75rem;
 $h3-font-size: 1.5rem;
 $h4-font-size: 1.25rem;
-$h5-font-size: 1.1rem;
-$h6-font-size: 1.1rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1.25rem;
 
 $headings-font-weight: 400;
 
