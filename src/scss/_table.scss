@@ -31,13 +31,20 @@ table {
       margin-top: 0;
     }
   }
-}
 
-caption {
-  @include font-size($figure-caption-font-size);
-  color: $body-color;
-  text-align: center;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: $spacer * 0.5;
+  code {
+    margin-inline: 0;
+    padding: 0;
+    border-radius: revert;
+    background-color: transparent;
+  }
+
+  caption {
+    @include font-size($figure-caption-font-size);
+    color: $body-color;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: $spacer * 0.5;
+  }
 }
