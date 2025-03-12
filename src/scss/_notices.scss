@@ -6,7 +6,6 @@ aside {
   margin-top: $spacer;
   padding: $spacer;
   border-radius: $border-radius;
-  color: $secondary-text-color;
   position: relative;
 
   &::before {
@@ -33,24 +32,45 @@ aside {
 }
 
 aside.tip {
-  background-color: rgba(25,25,28,0.05);
+  background-color: #f1faf1;
   &::before {
-    content: "\f193";
+    color: #0e700e;
+    content: "\f46b";
+  }
+
+  a {
+    color: #0e700e;
   }
 }
 
 aside.note, aside.important {
-  background-color: rgba(77,187,95,0.2);
+  background-color: #f2f2f2;
   &::before {
-    color: #4dbb5f;
-    content: "\f332";
+    color: $primary-text-color;
+    content: "\f431";
   }
 }
 
-aside.caution, aside.warning {
-  background-color: rgba(244,92,74,0.2);
+aside.warning {
+  background-color: #fff9f5;
   &::before {
-    color: #f45c4a;
-    content: "\f33a";
+    color: #8a3707;
+    content: "\f33b";
+  }
+
+  a {
+    color: #8a3707;
+  }
+}
+
+aside.caution {
+  background-color: #fdf3f4;
+  &::before {
+    color: #b10e1c;
+    content: "\f333";
+  }
+
+  a {
+    color: #b10e1c;
   }
 }
