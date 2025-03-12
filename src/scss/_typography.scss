@@ -152,34 +152,21 @@ ul {
 
 ul.checklist {
   li::before {
-    content: none;
+    font-family: $bootstrap-icons-font;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    font-variant: normal;
+    font-size: $font-size-base;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f28a";
+    top: $spacer * -0.125;
+    left: $spacer * -1.5;
   }
 
-  span.radio {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    position: absolute;
-    left: $spacer * -1.5;
-    top: $spacer * 0.25;
-
-    &::before {
-      content: '';
-      border: 1px solid rgba(0,0,0,0.48);
-      border-radius: 50%;
-      position: absolute;
-      top: -3px;
-      right: -3px;
-      bottom: -3px;
-      left: -3px;
-    }
-
-    &.checked {
-      background-color: rgb(91, 103, 112);
-    }
-    &.checked::before {
-      border-color: rgb(91, 103, 112);
-    }
+  li.checked::before {
+    content: "\f26b";
   }
 }
 
