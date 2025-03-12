@@ -31,7 +31,7 @@ aside {
   }
 }
 
-aside.tip {
+aside.tip, aside.important {
   background-color: #f1faf1;
   &::before {
     color: #0e700e;
@@ -43,7 +43,7 @@ aside.tip {
   }
 }
 
-aside.note, aside.important {
+aside.note {
   background-color: #f2f2f2;
   &::before {
     color: $primary-text-color;
