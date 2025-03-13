@@ -129,21 +129,23 @@ kbd {
 }
 
 ul, ol {
-  margin-top: $spacer;
-  margin-bottom: 0;
+  margin: $spacer 0 0 $spacer * 2;
   padding: 0;
-  list-style-type: none;
 }
 
 ul {
+  list-style-type: none;
+
   li {
-    display: table;
+    position: relative;
 
     &::before {
-      display: table-cell;
-      padding-right: $spacer * 0.75;
+      display: inline-block;
       font-size: $font-size-sm;
       content: "✼";
+      position: absolute;
+      top: $spacer * 0.125;
+      left: $spacer * -1.25;
     }
 
     &.checked::before {
@@ -153,16 +155,13 @@ ul {
 }
 
 ol {
-  counter-reset: item;
+  list-style-type: decimal;
 
-  > li {
-    display: table;
-    counter-increment: item;
+  ol {
+    list-style-type: lower-alpha;
 
-    &::before {
-      display: table-cell;
-      padding-right: $spacer * 0.5;
-      content: counters(item, ".") ". ";
+    ol {
+      list-style-type: lower-roman;
     }
   }
 }
@@ -172,12 +171,6 @@ li {
 
   > ul, > ol {
     margin-top: 0;
-  }
-
-  ol > li {
-    &::before {
-      content: counters(item, ".") " ";
-    }
   }
 
   p, .code-listing {
