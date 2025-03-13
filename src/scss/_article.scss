@@ -98,19 +98,18 @@ main.no-header {
 }
 
 ul.toc {
-  margin-left: 0;
-
-  ul {
-    margin-left: 0;
-  }
   li {
     margin-top: 0;
     padding-left: $spacer * .75;
+    position: relative;
 
     &::before {
+      display: inline-block;
       width: 1px;
+      padding-right: 0;
       content: "";
       background-color: #d1d1d2;
+      position: absolute;
       left: 0;
       top: 0;
       bottom: 0;
@@ -132,12 +131,8 @@ ul.toc {
 }
 
 ul.toc-sidebar {
-  margin-left: 0;
   overflow: auto;
 
-  ul {
-    margin-left: 0;
-  }
   li {
     margin-top: 0;
 
