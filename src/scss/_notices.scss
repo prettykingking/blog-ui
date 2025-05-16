@@ -1,65 +1,44 @@
 // Notices
 
-aside {
+aside.prompt {
+  display: inline-flex;
   margin-top: $spacer;
   padding: $spacer;
   border-radius: $border-radius;
-  position: relative;
-
-  &::before {
-    font-family: $bootstrap-icons-font;
-    font-style: normal;
-    font-weight: $font-weight-normal;
-    font-variant: normal;
-    font-size: $font-size-base;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: absolute;
-    top: $spacer * .875;
-    left: $spacer;
-  }
 
   .prompt-content {
-    padding-left: $spacer * 1.5;
-
     :first-child {
       margin-top: 0;
     }
   }
-}
 
-aside.note, aside.important {
-  border: 1px solid #d1d1d1;
-  background-color: #f5f5f5;
-  &::before {
-    content: "\f431";
+  .prompt-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: $spacer;
+    fill: currentColor;
   }
-}
 
-aside.tip {
-  border: 1px solid #0e700e;
-  background-color: #f1faf1;
-  &::before {
-    color: #0e700e;
-    content: "\f46b";
+  &.tip {
+    background-color: rgba(25,25,28,0.05);
+
+    .prompt-icon {
+      color: rgba(25, 25, 28, 0.7);
+    }
   }
-}
+  &.note, &.important {
+    background-color: rgba(77,187,95,0.2);
 
-aside.warning {
-  border: 1px solid #8a3707;
-  background-color: #fff9f5;
-  &::before {
-    color: #8a3707;
-    content: "\f33b";
+    .prompt-icon {
+      color: #4dbb5f;
+    }
   }
-}
+  &.warning, &.caution {
+    background-color: rgba(244,92,74,0.2);
 
-aside.caution {
-  border: 1px solid #b10e1c;
-  background-color: #fdf3f4;
-  &::before {
-    color: #b10e1c;
-    content: "\f337";
+    .prompt-icon {
+      color: #f45c4a;
+    }
   }
 }
